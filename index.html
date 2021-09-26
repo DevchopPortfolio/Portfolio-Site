@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+    <link rel="stylesheet" href="style.css">
+    <script async src="script.js"></script>
+</head>
+<body>
+    
+
+
+    <div id="showcase">
+        <h1>John Smith</h1>
+        <h3>My web projects</h3>
+    </div>
+    
+    
+
+    <main>        
+
+
+        <!-- <div></div> -->
+        
+
+        <ul id="leftframe">
+            <li data-target="#snapperoonies">Snapperoonies</li>
+            <li data-target="#calendar">Calendar</li>            
+            <li data-target="#catalogue">Catalogue</li>
+            <li data-target="#portfolio">This portfolio</li>
+        </ul>
+        
+
+        <div id="placeholder">
+            <h3>Select a project</h3> 
+        </div>
+    
+
+
+        <div id="rightframe" class="invisibility">
+
+
+
+            <div id="titleholder"></div>
+            
+            
+
+            <div id="linkholders">
+
+                <a id="linkurlholder" href="#" target="_blank">
+                    <span class="fa fa-external-link"></span>
+                    <span id="projecttitleholder">Add title here</span>
+                </a>
+
+                <a id="githuburlholder" href="#" target="_blank">
+                    <span id="githubholder" class="fa fa-github"></span>
+                    <span>View code on GitHub</span>
+                </a>
+
+            </div>
+
+
+
+            <div id="summaryholder"></div>
+
+
+
+            <div id="displayframe">          
+                   
+                <ul id="tabsframe">                        
+                    <li data-target="#tab1">User Experience</li>
+                    <li data-target="#tab2">Concepts</li>
+                    <li data-target="#tab3">Tools List</li>
+                    <li data-target="#tab4">In-depth</li>
+                </ul>
+
+                <div id="tabpageholder"></div>
+
+            </div>
+
+
+        </div>
+
+
+        <!-- <div></div> -->
+
+
+    </main>
+
+
+
+
+
+
+
+
+    <div id="contentlibrary">
+
+
+        <div id="calendar"   
+            class="post"                      
+            data-linkurl="https://calendar.devchop.co.uk" 
+            data-githuburl="https://wikipedia.com"            
+            >
+
+            <h2 class="title">Calendar</h2>            
+
+            <p class="summary">
+                An app I made in HTML, CSS and javascript that procedurally generates a 1 year calendar.
+                The user can input settings and type notes into each day.     
+            </p>
+        
+            <div class="tabpages">
+
+                <div id="tab1" class="tabpage">	
+                First the user can make some selections in the options page:
+                    - on which day of the week the calendar's year starts (1st Jan)
+                    - whether or not it's a leap year
+                    - favourite day of the year
+                 
+                Then the calendar is procedurally generated and the browser navigates to it. The calendar fills the browser window. It is a grid with weekdays as columns and months as rows. 
+                
+                Each day is a grid 'cell' that has: 
+                    - a number indicating the date
+                    - space for user's notes
+                    - a colour determined by to its month
+                
+                The user can click on any day cell and type notes into that day. if they enter more text than is able to fit, a vertical scroll bar appears on the cell.
+                
+                The 'favourite day' cell is automatically labelled.
+             
+                
+                </div>
+
+                <div id="tab2" class="tabpage">
+                    Written in HTML, CSS and javascript.
+                    An app that solves a problem by using an algorithm.
+                    Javscript interacts with the DOM to procedurally build an HTML document and create a web page.
+                    HTML forms (text input, selection menu, date selector) take user input.
+                    HTML attributes pass user input data from the HTML form to javascript.
+                    The javascript sessionStorage Class transfers data between webpages.
+                    Javascript reads the values of CSS custom properties.
+                    A 'for loop' creates a series of JS objects.
+                    A function call located inside a loop to invoke a function multiple times, passing different arguments each time.
+                    Javascript's DOM utilities copy, modify and insert elements to the web page.
+                    Data attributes store meta data in HTML elements.
+                    An event listener detects the user's mouse clicks.
+                    Keyboard focus is detected and controlled.
+                    Page layout is controlled by CSS box model, flexbox and grid.
+                    CSS grid controls the layout of hundreds of HTML elements.
+                </div>
+
+                <div id="tab3" class="tabpage">
+                    <h4>HTML tools</h4>                        
+                        <b>General elements</b>
+                            html, head, body, p, h1, header, link, script, br, section, main, div
+                        
+                        <b>Form elements</b>
+                            form, textarea, select, option, input 
+                        
+                        <b>Attributes</b>
+                            data attributes, id, class, onsubmit, value
+                         
+                          
+                    <h4>CSS tools</h4>                        
+                        <b>Selectors</b>
+                            :root, element type, id, class, attribute value, :hover
+                         
+                        <b>Common properties</b>
+                            display, margin, padding, width, height, border, font, box shadow, background, text-align
+                        
+                        <b>Other properties</b>
+                            custom properties (CSS variables), overflow, z-index, position, cursor
+                            
+                        <b>Layouts</b>
+                            grid, flexbox
+                
+                 
+                    <h4>Javascript tools</h4>                         
+                        <b>Basic features</b> 
+                            variables, operators, if statements, functions, loops, methods, properties, arrays, objects
+                         
+                        <b>Misc utilities</b>
+                            getComputedStyle()
+                            getPropertyValue()
+                            Number()
+                            substring()
+                            toString()
+                            addEventListener()
+                            sessionStorage.getItem()
+                            sessionStorage.setItem()
+                            location.href
+                            console.log()
+                        
+                        <b>DOM utilities</b>
+                            querySelector()
+                            cloneNode()
+                            appendChild()
+                            remove()
+                            nodeValue
+                            innerHTML
+                            innerText
+                            focus()
+                            setAttribute()
+                            removeAttribute()
+                            classList.remove()
+                            classList.add()
+                            getComputedStyle()
+                            getPropertyValue()
+                            document.documentElement
+                            style.setProperty()                        
+                </div>
+
+                <div id="tab4" class="tabpage">
+                    <h4>The Javascript algorithm</h4> 
+                    At first the year consists of only 1 day - which exists in the HTML as a div element called #celltemplate - and 1 month - which exists in the HTML as a div element called #monthtemplate.
+                     
+                    A loop cycles through the months. That loop contains another loop that cycles through the days of that month. In each loop cycle, the 'createcell' function is called to make a copy of #celltemplate. This process creates all the days of the calendar as HTML elements.
+                     
+                    In the 'createcell' function, each day cell is given:
+                        • various data attributes (custom attributes) that store metadata (date, month, weekday, daycode) about that day
+                        • a 'click' event listener, for triggering the text input form (see below)
+                        • another 'click' event listener, which means, when clicked, the day cell logs its meta data to the console (the logger function)
+                     
+                    
+                    <h4>Behaviour of the text input form</h4>                         
+                        The text input form is controled by the 'formworker' function
+                        When the user clicks a day cell, the cell temporarily becomes the parent element of the HTML text input form, which exists in the HTML as the form element and textarea element. This is done using the DOM utility: appendChild()
+                        Any text already in the day cell is copied into the form. The user can then use the form to edit the text in the day cell. 
+                        When the user clicks elsewhere, the text input form loses keyboard focus, which triggers an event listener, which calls an event-handler function. The function 
+                            - removes the form (using DOM utility: remove) 
+                            - copies the form's text (using the text input's 'value' property) 
+                            - pastes the text to the day cell using the cell's innerHTML property
+                     
+                     
+                    <h4>Column headings</h4>                     
+                    The upper grid displays column headings containing the names of the days of the week
+                     
+                    CSS sets the uppergrid as position: fixed, so the grid stays at the top of the browser viewport regardless of vertical scrolling.
+                     
+                    A header element contains seven h2 elements which contain the week day names. The header is a CSS grid so that the weekday names are in columns that line up precisely with the grid columns of the lower grid.
+                     
+                      
+                    <h4>Left sidebar</h4>                     
+                    The left sidebar of the lower grid is a single column that displays each month name inside a box. A javascript algorithm is used to determine the height of each month box in the sidebar, which depends on the number of weeks that each particular month spans.
+                     
+                    <b>The sidebar algorithm</b>
+                        An array called months contains an array item for each month
+                        Each array item contains an object which contains data on that month including each month's 'start week'. A 'for loop' uses this data to calculate the months 'span' value (how many weeks that month covers). From this the month's height (row height) in rem units is calculated.
+                        This height value is transferred from javascript to the element's inline CSS using the style.setProperty() function
+                                       
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+        <div id="snapperoonies"             
+            class="post" 
+            data-linkurl="https://snapperoonies.devchop.co.uk" 
+            data-githuburl="https://wikipedia.com"            
+            >       
+
+            <h2 class="title">Snapperoonies</h2>
+
+            <p class="summary">
+                A website made in HTML + CSS
+            </p>
+        
+            <div class="tabpages">
+                <div id="tab1" class="tabpage">
+
+                </div>
+                <div id="tab2" class="tabpage">
+
+                </div>
+                <div id="tab3" class="tabpage">
+
+                </div>
+                <div id="tab4" class="tabpage">
+
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+        <div id="catalogue"             
+            class="post"            
+            data-linkurl="https://sub.devchop.co.uk" 
+            data-githuburl="https://wikipedia.com"            
+            >       
+
+            <h2 class="title">Catalogue</h2>
+
+            <p class="summary">
+                A REST client I made using HTML, CSS and Javascript. When the page is opened in the browser it accesses the REST API of a fictitious sports company, receives the response as a JSON file, and renders the content in the webpage so the user can browse the company's products.                
+            </p>
+        
+            <div class="tabpages">
+
+                <div id="tab1" class="tabpage">
+                The user can browse a gallery of products sold by the fictitious company hPlusSport. 
+                
+                The gallery shows a title and thumbnail image for each item. When the user clicks on a product it is presented in the left frame with a larger image, description and price.
+                </div>
+
+                <div id="tab2" class="tabpage">
+                    A REST client that creates an XHR request that sends a GET request to a REST API.
+                    A JSON text file is received and parsed into a javascript collection.
+                    Javascript DOM utilities transfer data from a javascript collection to the HTML document.
+                    Element nodes are called, copied and inserted into the DOM.
+                    Presentation is controlled using CSS tools such as grid, flexbox, transform, transition.                    
+                </div>
+
+                <div id="tab3" class="tabpage">
+                <h4>HTML tools</h4>
+                    class attribute
+                    id attribute
+                
+                
+                <h4>CSS tools</h4>
+                    grid
+                    flex
+                    overflow property
+                    transition property
+                    transform property
+                
+                
+                <h4>Javascript tools</h4>                
+                <b>General</b>
+                    forEach method
+                    addEventListener method
+                    new keyword
+                
+                <b>DOM</b>
+                    querySelector method
+                    cloneNode method
+                    removeAttribute method
+                    setAttribute method
+                    appendChild method
+                    classList property
+                    innerText property
+                    innerHTML property
+                
+                <b>REST client</b>
+                    XMLHttpRequest
+                    open() method
+                    send() method
+                    JSON.parse() method
+                    response property
+                    onload eventProperty                    
+                </div>
+
+                <div id="tab4" class="tabpage">
+                    hPlusSport is a fictitious company created by LinkedIn Corporation for the creation and development of educational training materials. It includes a website (https://hplussport.com/) and an API.
+
+                    Using HTML, CSS and Javascript I created a webpage that acts as a simple REST client. 
+                    
+                    When the catalogue page is opened in the browser, it creates and sends a REST request to the hPlusSport API. The type of request is XMLHttpRequest (XHR). The request targets a resource which is a JSON file that gives details (name, description, image, price) of a range of fictional products. The API responds by sending the file. The client reads and renders the data to the webpage so that the user can browse through the products.
+                    
+                    (To demonstrate the content of the JSON file, here is <a href="https://sub.devchop.co.uk/raw/raw.html" target="_blank" style="color:lightpink"> another web page <span class="fa fa-external-link"></span></a> I created which gets the same resource from the same API, but presents the raw data in a simpler layout, using less style formatting.)
+                    
+                    
+                    <h4>Details of the request and response</h4>                        
+                    <b>Create an XHR object</b>
+                    The XMLHttpRequest Class is instantiated to create an object called 'myrequest'. The properties and methods of this object will handle the request and response.                    
+                    
+                    <b>Specify a request</b>
+                    The object's open() method is used to specify the request. Secifically, it gives:
+                        - the URL of the resource, which is https://hplussport.com/api/products 
+                        - and the type of verb, which is GET.
+                    GET will instruct the API to respond by sending the targeted resource.                    
+                    
+                    <b>Send the request</b>
+                    The send() method sends the request and starts the request-response transaction.                    
+                    
+                    <b>Handle the response</b>
+                    The response triggers the object's 'onload' event property, which invokes its event-handler-function. The response also includes the resource which is a JSON file that populates the 'myrequest.response' property.                    
+                    
+                    <b>Process the data</b>
+                    Inside the event-handler-function, the 'JSON.parse()' method parses the JSON string into a an array (the products array). Each array item contains an object that represents one product. Each object contains the following key names:
+                        id
+                        name
+                        description
+                        price
+                        image_title
+                        image                    
+                    
+                    <b>Generate cards</b>
+                    To display the information on the page, the products will be presented in a gallery of HTML elements, called cards. Each card contains the name and image of 1 product.
+                    
+                    How the HTML cards are made:
+                    
+                    Only 1 card is described in the HTML document, which has the ID of 'cardtemplate'. This is used as a template for all other cards. It is not rendered as it has the CSS property of 'display: none'.
+                    
+                    A forEach() method iterates through each item of the products array, and performs the following operations on each product:
+                        - the cloneNode() method makes a copy of the HTML card template element.
+                        - the new card's child elements are populated with the product title and product image.
+                        - the new card is given an event listener that will trigger when the user clicks the card, and will call the 'populatefocusframe' function, which puts the card's product details in the left frame.
+                        - the new card is added to the gallery by attaching it to the gallery container element (#rightframe).
+                    
+                </div>
+                    
+            </div>
+
+        </div>
+
+
+
+        
+
+        <div id="portfolio"             
+            class="post"                
+            data-linkurl="#" 
+            data-githuburl="https://wikipedia.com"            
+            >       
+
+            <h2 class="title">Portfolio</h2>
+
+            <p class="summary">
+                This portfolio website gives a description of each of my web dev projects. It features buttons and tabs. I created this site using HTML, CSS and Javascript.           
+            </p>
+        
+            <div class="tabpages">
+
+                <div id="tab1" class="tabpage">
+                    The user navigates through descriptions of my projects by using using buttons and tabs.                    
+                    The sidebar on the left contains buttons to select a project.                     
+                    The display frame on the right displays information on the currently selected project. Each project is presented in the same layout template, with title, links, summary and tabs. The text description for each project is sub divided into 4 clickable tabs.                    
+                    On larger screen sizes, the main content of the page matches the height of the browser window.                    
+                </div>
+
+                <div id="tab2" class="tabpage">
+                    The HTML document contains a template area for displaying information and a content storage area for storing information.
+                    Javascript modifies the webpage by inserting element nodes in the DOM and editing attributes in the DOM.
+                    Javascript indirectly influences the page's appearance by editing the style attributes on element nodes in order to change which elements are targeted by which CSS rule sets.
+                    The CSS transform property changes the rendered position of an HTML element (buttons).
+                    CSS transitions create smooth movement.
+                    Layout is controlled using CSS flexbox and grid.
+                    Icons are imported into the web page from an external repository (Font Awesome).                
+                </div>
+
+                <div id="tab3" class="tabpage">                    
+                    <h4>HTML tools</h4>
+                    data (custom) attributes
+                    id attributes
+                    class attributes
+                    icons from font awesome                    
+                    
+                    
+                    <h4>CSS tools</h4>
+                    <b>Properties</b>
+                        white-space 
+                        scroll-behaviour 
+                        transform 
+                        transition 
+                        position (absolute)
+                        opacity 
+                        display 
+                        overflow 
+                        list-style-type
+                    
+                    <b>Values</b>
+                        %, em, rem, VH (viewport height)
+                    
+                    <b>Selectors</b>
+                        :not()
+                    
+                    <b>Layout</b>
+                        grid
+                        flex                     
+                    
+
+                    <h4>Javascript tools</h4>
+                    <b>Array methods</b>
+                        forEach()
+                    
+                    <b>Events</b>
+                        addEventListener()
+                    
+                    <b>DOM tree</b>
+                        querySelector()
+                        querySelectorAll()
+                        getAttribute()
+                        setAttribute()
+                        cloneNode()
+                        innerHTML
+                        classList
+                    
+                    <b>Browser</b>
+                        window.scrollTo()                       
+                </div>
+
+                <div id="tab4" class="tabpage">
+                    <h4>Icons from font awesome</h4>
+
+                    icon for 'open in new tab'
+                    icon for 'github'
+                    
+                    To give the page access to Font Awesome icons, a link element is included in the HTML document's head section, with the following attributes:
+                        link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+                    
+                    Then an icon can be inserted in an HTML element by giving the element the following class name:
+                        fa fa-nameoficon
+                    
+                    
+                    <h4>Buttons and Tabs</h4>
+                    The page has clickable buttons and clickable tabs. They change what is displayed on the page by causing javascript to edit the DOM. They each achieve this in a different way
+                        - the buttons work by causing DOM elements to be copied and inserted
+                        - the tabs work by causing attributes on DOM elements to be edited
+                    
+                    
+                    <h4>Buttons</h4>
+                    
+                    There are multiple 'posts'. Each post contains the data (title, links, summary, tabpages) for a different project.
+                    
+                    The user clicks a button in the left menu to select which post to view in the template on the right. Javascript then copies that post's data from the content library to the display template, replacing whatever content the template currently contained.
+                    
+                    Only the content of the currently active post is applied to the template at one time. This process is an example of the separation of template from content.
+                    
+                    The template presents posts in a standardised way, controlling their presentation/layout. The template is composed of various HTML elements and is located in the 'div #rightframe' element.
+                    
+                    Posts are located in HTML document, in the 'content library' which is the 'div #contentlibrary' element. The content library appears in the HTML but it is omitted from the page, due to the following CSS rule set:
+                        #contentlibrary {
+                            display: none
+                        }
+                    Therefore, a post is only visible after javascript has copied its data from the content library to the template.
+                    
+                    <b>DOM utilities</b>
+                    Each button has a data attribute called data-target. Its value indicates which post the button targets.
+                    Javascript gets this string value using the getAttribute() method, and uses it in a querySelector to target the correct post element.
+                    The cloneNode() method is then used to make copies of the various HTML elements in the post.
+                    The appendChild() method is then used to append these copies to various parts of the template.
+                    
+                    
+                    <h4>Tabs</h4>
+                    
+                    In the HTML document are 4 clickable tabs. Each has a corresponding tabpage element that contains text. The tabpage elements are located in the #tabpageholder element and belong to the tabpage class (i.e, have a value of 'tabpage' in their class attribute)
+                    
+                    The tabpage elements are invisible, due to the following CSS ruleset:
+                    
+                    .tabpage {
+                        display: none;
+                    }
+                    
+                    1 of the 4 tabpages may be the 'active' tabpage as it has the 'active' class in its class attribute. This tabpage is visible because it is targeted by the following CSS ruleset:
+                    
+                    .tabpage.active {
+                        display: block;
+                    }
+                    
+                    When the user clicks a tab, Javascript moves the 'active' class to its corresponding tabpage. This is achieved by the following:
+                    
+                    The user's click triggers the tab's 'click' eventListener, which calls a callback function (called 'tabclicked') which removes the 'active' class name from all tabpages, then adds the 'active' class name only to the clicked tab's target tabpage.
+                    
+                    Javascript reads/edits an element's classes by using the element's classList property:
+                        element.classList.remove(classname)
+                        element.classList.add(classname)
+                    
+                    <b>Controlling which tabpage is targeted by which tab</b>
+                    Each tab element contains a data attribute called 'data-target'. Its value is a string that specifies the ID (value of the element's ID attribute) of its target tabpage element. This value is aquired using the tab element's getAttribute() method and is used to target the correct tabpage by including it in a querySelector() method.
+
+                    
+                    
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+</body>
+</html>
