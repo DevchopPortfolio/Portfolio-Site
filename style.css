@@ -44,8 +44,7 @@ h4 {
 
 
 #contentlibrary,
-#lowerframe.invisibility,
-#placeholder.invisibility
+#lowerframe.invisibility
 {
     display: none;
 }
@@ -65,11 +64,8 @@ h4 {
 
 
 
-#placeholder {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-}
+
+
 
 
 
