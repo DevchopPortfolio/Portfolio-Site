@@ -14,7 +14,7 @@ let githuburlholder = document.querySelector('#githuburlholder');
 
 // ADD EVENTLISTENER TO EACH BUTTON
 
-document.querySelectorAll('#leftframe li').forEach( thisbutton => {
+document.querySelectorAll('#menubar li').forEach( thisbutton => {
 
     thisbutton.addEventListener('click', (pingreport) => {
         buttonactivate(pingreport.target)
@@ -30,12 +30,12 @@ document.querySelectorAll('#leftframe li').forEach( thisbutton => {
 
 function buttonactivate (thisbutton) {
 
-        document.querySelector('#rightframe').classList.remove('invisibility')
-        document.querySelector('#placeholder').classList.add('invisibility')
+        document.querySelector('#lowerframe').classList.remove('invisibility')
+        // document.querySelector('#placeholder').classList.add('invisibility')
         
         window.scrollTo(0,document.body.scrollHeight);                      //browser scrolls down
 
-        document.querySelectorAll('#leftframe li').forEach(othertab => {
+        document.querySelectorAll('#menubar li').forEach(othertab => {
             othertab.classList.remove('active')                             //remove 'active' class from all tabs
         })
 
