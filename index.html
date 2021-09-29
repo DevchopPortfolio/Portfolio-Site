@@ -13,10 +13,10 @@
     
 
 
-    <div id="showcase">
+    <header id="showcase">
         <h1>John Smith</h1>
         <h3>My web projects</h3>
-    </div>
+    </header>
     
     
 
@@ -25,12 +25,12 @@
 
         
 
-        <ul id="menubar">
+        <nav id="menubar">
             <li data-target="#snapperoonies">Snapperoonies</li>
             <li data-target="#calendar">Calendar</li>            
             <li data-target="#catalogue">Catalogue</li>
             <li data-target="#portfolio">This portfolio</li>
-        </ul>
+        </nav>
         
 
     
@@ -39,11 +39,11 @@
 
 
 
-            <div id="titleholder"></div>
+            <section id="titleholder"></section>
             
             
 
-            <div id="linkholders">
+            <section id="linkholders">
 
                 <a id="linkurlholder" href="#" target="_blank">
                     <span class="fa fa-external-link"></span>
@@ -55,15 +55,15 @@
                     <span>View <span id="projecttitleholder2"></span> code on GitHub</span>
                 </a>
 
-            </div>
+            </section>
 
 
 
-            <div id="summaryholder"></div>
+            <section id="summaryholder"></section>
 
 
 
-            <div id="displayframe">          
+            <section id="displayframe">          
                    
                 <ul id="tabsframe">                        
                     <li data-target="#tab1">User Experience</li>
@@ -74,11 +74,10 @@
 
                 <div id="tabpageholder">
                 </div>
-                
-                <section></section>
+                                
+            </section>
 
-            </div>
-
+            <footer></footer>
 
         </div>
 
@@ -93,7 +92,7 @@
 
 
 
-    <div id="contentlibrary">
+    <aside id="contentlibrary">
 
 
 
@@ -110,22 +109,22 @@
             </p>
         
             <div class="tabpages">
-                <div id="tab1" class="tabpage">
+                <article id="tab1" class="tabpage">
                     Navigate around a simple 3 page, brochure website of a fictitious photography company.
                     A navigation bar contains links to each page.
                     Parts of the site change their layout to give the best appearance with the current screen width.
-                </div>
-                <div id="tab2" class="tabpage">
+                </article>
+                <article id="tab2" class="tabpage">
                     Responsivity with CSS media quieries
                     Icons imported from Font Awesome
                     CSS layouts: grid, flexbox
-                </div>
-                <div id="tab3" class="tabpage">
+                </article>
+                <article id="tab3" class="tabpage">
                     [This section - work in progress]
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, quos? Animi sint natus doloribus corporis velit cumque inventore. Est obcaecati accusantium veniam consequatur iste voluptates voluptatum omnis perferendis cumque hic.
                     Saepe commodi enim libero maiores explicabo rem, est quia temporibus iure a eum blanditiis fugit voluptates nulla nobis facere consequatur architecto fuga sunt! Praesentium eius cupiditate possimus voluptatum suscipit officiis.
-                </div>
-                <div id="tab4" class="tabpage">
+                </article>
+                <article id="tab4" class="tabpage">
                     [This section - work in progress]
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur atque velit amet numquam obcaecati beatae fugiat! Obcaecati harum mollitia quo repudiandae sequi, provident, delectus magni animi, veniam repellat iure voluptatibus.
                     Dolor, voluptates. Nesciunt dignissimos at deleniti commodi dolor, sequi reiciendis accusamus temporibus voluptate. Excepturi pariatur vitae accusantium placeat expedita, tempora dolor modi nam vero? Sunt nesciunt earum iste doloremque! Autem!
@@ -137,7 +136,7 @@
                     Blanditiis eos nobis neque voluptatem ea aperiam obcaecati dolorum aliquam dolore? Nesciunt eius ut libero ipsam, vitae, quae, odio doloribus fuga provident qui atque accusamus ducimus sit sapiente corrupti excepturi.
                     Voluptates sint sit, impedit ad inventore, aliquid eius ratione cum, aspernatur commodi laboriosam dignissimos id esse mollitia! Reiciendis dicta velit atque totam ea soluta. Inventore itaque nemo nobis dicta aperiam!
                     Laboriosam in reiciendis ut. Necessitatibus, impedit debitis molestias nisi magni asperiores, temporibus accusamus distinctio ipsam fugiat quo voluptate omnis repudiandae sint ea sapiente accusantium porro commodi! Sed tenetur laudantium facilis!
-                </div>
+                </article>
             </div>
 
         </div>
@@ -162,7 +161,7 @@
         
             <div class="tabpages">
 
-                <div id="tab1" class="tabpage">	
+                <article id="tab1" class="tabpage">	
                 First the user can make some selections in the options page:
                     - on which day of the week the calendar's year starts (1st Jan)
                     - whether or not it's a leap year
@@ -180,9 +179,9 @@
                 The 'favourite day' cell is automatically labelled.
              
                 
-                </div>
+                </article>
 
-                <div id="tab2" class="tabpage">
+                <article id="tab2" class="tabpage">
                     Written in HTML, CSS and javascript.
                     An app that solves a problem by using an algorithm.
                     Javscript interacts with the DOM to procedurally build an HTML document and create a web page.
@@ -198,9 +197,9 @@
                     Keyboard focus is detected and controlled.
                     Page layout is controlled by CSS box model, flexbox and grid.
                     CSS grid controls the layout of hundreds of HTML elements.
-                </div>
+                </article>
 
-                <div id="tab3" class="tabpage">
+                <article id="tab3" class="tabpage">
                     <h4>HTML tools</h4>                        
                         <b>General elements</b>
                             html, head, body, p, h1, header, link, script, br, section, main, div
@@ -259,9 +258,9 @@
                             getPropertyValue()
                             document.documentElement
                             style.setProperty()                        
-                </div>
+                </article>
 
-                <div id="tab4" class="tabpage">
+                <article id="tab4" class="tabpage">
                     <h4>The Javascript algorithm</h4> 
                     At first the year consists of only 1 day - which exists in the HTML as a div element called #celltemplate - and 1 month - which exists in the HTML as a div element called #monthtemplate.
                      
@@ -299,14 +298,11 @@
                         Each array item contains an object which contains data on that month including each month's 'start week'. A 'for loop' uses this data to calculate the months 'span' value (how many weeks that month covers). From this the month's height (row height) in rem units is calculated.
                         This height value is transferred from javascript to the element's inline CSS using the style.setProperty() function
                                        
-                </div>
+                </article>
 
             </div>
 
         </div>
-
-
-
 
 
 
@@ -327,60 +323,60 @@
         
             <div class="tabpages">
 
-                <div id="tab1" class="tabpage">
+                <article id="tab1" class="tabpage">
                 The user can browse a gallery of products sold by the fictitious company hPlusSport. 
                 
                 The gallery shows a title and thumbnail image for each item. When the user clicks on a product it is presented in the left frame with a larger image, description and price.
-                </div>
+                </article>
 
-                <div id="tab2" class="tabpage">
+                <article id="tab2" class="tabpage">
                     A REST client that creates an XHR request that sends a GET request to a REST API.
                     A JSON text file is received and parsed into a javascript collection.
                     Javascript DOM utilities transfer data from a javascript collection to the HTML document.
                     Element nodes are called, copied and inserted into the DOM.
                     Presentation is controlled using CSS tools such as grid, flexbox, transform, transition.                    
-                </div>
+                </article>
 
-                <div id="tab3" class="tabpage">
-                <h4>HTML tools</h4>
-                    class attribute
-                    id attribute
-                
-                
-                <h4>CSS tools</h4>
-                    grid
-                    flex
-                    overflow property
-                    transition property
-                    transform property
-                
-                
-                <h4>Javascript tools</h4>                
-                <b>General</b>
-                    forEach method
-                    addEventListener method
-                    new keyword
-                
-                <b>DOM</b>
-                    querySelector method
-                    cloneNode method
-                    removeAttribute method
-                    setAttribute method
-                    appendChild method
-                    classList property
-                    innerText property
-                    innerHTML property
-                
-                <b>REST client</b>
-                    XMLHttpRequest
-                    open() method
-                    send() method
-                    JSON.parse() method
-                    response property
-                    onload eventProperty                    
-                </div>
+                <article id="tab3" class="tabpage">
+                    <h4>HTML tools</h4>
+                        class attribute
+                        id attribute
+                    
+                    
+                    <h4>CSS tools</h4>
+                        grid
+                        flex
+                        overflow property
+                        transition property
+                        transform property
+                    
+                    
+                    <h4>Javascript tools</h4>                
+                    <b>General</b>
+                        forEach method
+                        addEventListener method
+                        new keyword
+                    
+                    <b>DOM</b>
+                        querySelector method
+                        cloneNode method
+                        removeAttribute method
+                        setAttribute method
+                        appendChild method
+                        classList property
+                        innerText property
+                        innerHTML property
+                    
+                    <b>REST client</b>
+                        XMLHttpRequest
+                        open() method
+                        send() method
+                        JSON.parse() method
+                        response property
+                        onload eventProperty                    
+                    </article>
 
-                <div id="tab4" class="tabpage">
+                <article id="tab4" class="tabpage">
                     hPlusSport is a fictitious company created by LinkedIn Corporation for the creation and development of educational training materials. It includes a website (https://hplussport.com/) and an API.
 
                     Using HTML, CSS and Javascript I created a webpage that acts as a simple REST client. 
@@ -428,7 +424,7 @@
                         - the new card is given an event listener that will trigger when the user clicks the card, and will call the 'populatefocusframe' function, which puts the card's product details in the left frame.
                         - the new card is added to the gallery by attaching it to the gallery container element (#lowerframe).
                     
-                </div>
+                </article>
                     
             </div>
 
@@ -452,14 +448,14 @@
         
             <div class="tabpages">
 
-                <div id="tab1" class="tabpage">
+                <article id="tab1" class="tabpage">
                     The user navigates through descriptions of my projects by using using buttons and tabs.                    
                     The sidebar on the left contains buttons to select a project.                     
                     The display frame on the right displays information on the currently selected project. Each project is presented in the same layout template, with title, links, summary and tabs. The text description for each project is sub divided into 4 clickable tabs.                    
                     On larger screen sizes, the main content of the page matches the height of the browser window.                    
-                </div>
+                </article>
 
-                <div id="tab2" class="tabpage">
+                <article id="tab2" class="tabpage">
                     The HTML document contains a template area for displaying information and a content storage area for storing information.
                     Javascript modifies the webpage by inserting element nodes in the DOM and editing attributes in the DOM.
                     Javascript indirectly influences the page's appearance by editing the style attributes on element nodes in order to change which elements are targeted by which CSS rule sets.
@@ -467,9 +463,9 @@
                     CSS transitions create smooth movement.
                     Layout is controlled using CSS flexbox and grid.
                     Icons are imported into the web page from an external repository (Font Awesome).                
-                </div>
+                </article>
 
-                <div id="tab3" class="tabpage">                    
+                <article id="tab3" class="tabpage">                    
                     <h4>HTML tools</h4>
                     data (custom) attributes
                     id attributes
@@ -518,9 +514,9 @@
                     
                     <b>Browser</b>
                         window.scrollTo()                       
-                </div>
+                </article>
 
-                <div id="tab4" class="tabpage">
+                <article id="tab4" class="tabpage">
                     <h4>Icons from font awesome</h4>
 
                     icon for 'open in new tab'
@@ -591,7 +587,7 @@
 
                     
                     
-                </div>
+                </article>
 
             </div>
 
@@ -606,7 +602,7 @@
 
 
 
-    </div>
+    </aside>
 
 
 </body>
