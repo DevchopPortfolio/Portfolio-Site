@@ -6,6 +6,7 @@ let titleholder = document.querySelector('#titleholder')
 let summaryholder = document.querySelector('#summaryholder')
 let tabpageholder = document.querySelector('#tabpageholder')
 let projecttitleholder = document.querySelector('#projecttitleholder')
+let projecttitleholder2 = document.querySelector('#projecttitleholder2')
 let linkurlholder = document.querySelector('#linkurlholder');
 let githuburlholder = document.querySelector('#githuburlholder');
 
@@ -30,6 +31,11 @@ document.querySelectorAll('#menubar li').forEach( thisbutton => {
 
 function buttonactivate (thisbutton) {
 
+        // console.log('button clicked')
+        // if(thisbutton.nodeName == 'p') {
+        //     thisbutton = thisbutton.parentNode
+        // }
+
         document.querySelector('#lowerframe').classList.remove('invisibility')
         // document.querySelector('#placeholder').classList.add('invisibility')
         
@@ -52,7 +58,7 @@ function buttonactivate (thisbutton) {
         let titletomove = thispost.querySelector('.title')        
         let summarytomove = thispost.querySelector('.summary')
         let tabpagestomove = thispost.querySelector('.tabpages')
-        let projecttitle = titletomove.innerText
+        let projecttitle = titletomove.innerText        
         let linkurl = thispost.getAttribute('data-linkurl')
         let githuburl = thispost.getAttribute('data-githuburl')
 
@@ -64,6 +70,7 @@ function buttonactivate (thisbutton) {
         tabpageholder.innerHTML = ''
         tabpageholder.appendChild(tabpagestomove.cloneNode(true))
         projecttitleholder.innerText = projecttitle
+        projecttitleholder2.innerText = projecttitle
         linkurlholder.setAttribute('href', linkurl)
         githuburlholder.setAttribute('href', githuburl)
 

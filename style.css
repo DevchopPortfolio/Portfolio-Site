@@ -100,7 +100,7 @@ main {
     width: 8rem;
     padding: 0.2rem 0.8rem;    
     cursor: pointer;    
-    /* transition: transform 100ms; */
+    transition: transform 100ms;
     
     font-size: 1.2em;    
     /* background-color: #DDE;     */
@@ -109,14 +109,16 @@ main {
 }
 
 #menubar li:not(.active):hover {        
-    opacity: 0.7; 
+    /* opacity: 0.5; */
+    background: #335;
+    color: white;
     /* box-shadow: 0.2rem 0.2rem 0.3rem #0001; */
     /* transform: translateX(0.8rem); */
 }
 
 #menubar li.active {
     /* background:#116; */    
-    /* transform: translateX(0.8rem); */    
+    transform: translateY(0.8rem);    
     font-weight: bold;        
     box-shadow: 0 0 0;   
     background: white;
@@ -142,8 +144,7 @@ main {
     display: grid;
     grid-template-rows: auto auto auto 1fr;
     gap: 0;     
-    overflow: hidden;
-    grid-auto-columns: ;
+    overflow: hidden;    
     
     /* background: lightgrey;   */
 }
@@ -157,11 +158,16 @@ main {
 }
 
 
+#linkholders {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
 #linkholders a {
     display: inline-block;
     text-decoration:none;     
-    width: 15rem;
+    /* width: 15rem; */    
 }
 
 #linkholders a:hover {
