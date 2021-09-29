@@ -18,7 +18,14 @@ let githubUrlHolder = document.querySelector('#githuburlholder');
 document.querySelectorAll('#menubar li').forEach( thisButton => {
 
     thisButton.addEventListener('click', (pingReport) => {
+
+        //scroll to bottom so that <main> fills the screen
+        if (window.innerHeight > 600) {
+            window.scrollTo(0, document.body.scrollHeight);                      //browser scrolls down
+        }       
+        
         buttonActivate(pingReport.target)
+
     })
 
 })
@@ -27,10 +34,14 @@ document.querySelectorAll('#menubar li').forEach( thisButton => {
 
 
 
+
+
+
+
 // CONTENT OF EVENTLISTENER FOR BUTTONS
 
-function buttonActivate (thisButton) {
-        
+function buttonActivate (thisButton) {        
+
         // if they click the text on the button instead of the button, target the button
         // if(thisbutton.nodeName == 'SPAN') {            
         //     thisbutton = thisbutton.parentNode
@@ -38,8 +49,7 @@ function buttonActivate (thisButton) {
 
         document.querySelector('#lowerframe').classList.remove('invisibility')
         // document.querySelector('#placeholder').classList.add('invisibility')
-        
-        window.scrollTo(0,document.body.scrollHeight);                      //browser scrolls down
+      
 
         document.querySelectorAll('#menubar li').forEach(otherTab => {
             otherTab.classList.remove('active')                             //remove 'active' class from all tabs
@@ -130,3 +140,9 @@ function tabActivate (thisTab) {
 
 
 
+
+
+
+
+// make first button active upon first load
+buttonActivate(document.querySelector('#menubar :first-child'))
