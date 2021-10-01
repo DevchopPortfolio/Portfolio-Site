@@ -47,6 +47,8 @@ h4 {
 
 
 
+                /* SHOWCASE */              
+
 #showcase {
     text-align: center;    
     padding: 1rem;
@@ -76,7 +78,7 @@ h4 {
 
 
 
-
+                /* MAIN */
 
 main {    
     height: 100vh;        
@@ -84,8 +86,20 @@ main {
     grid-template-rows: auto 1fr;        
 }
 
+/* changes behaviour of scroll bars when viewport has low height */
+@media (max-height: 600px) {
+    main { 
+        height: auto;        
+    }
+}
 
 
+
+
+
+
+
+                /* MENUBAR */
 
 #menubar {        
 
@@ -162,6 +176,10 @@ main {
 
 
 
+
+                /* LOWERFRAME */
+
+
 #lowerframe {    
 
     max-width: 60rem;
@@ -175,14 +193,6 @@ main {
     overflow:hidden;    
     
     /* background: lightgrey;   */
-}
-
-
-/* when screen height is low, make overflow of #lowerframe visible*/
-@media (max-height: 600px) {
-    #lowerframe { 
-        overflow: visible;        
-    }
 }
 
 

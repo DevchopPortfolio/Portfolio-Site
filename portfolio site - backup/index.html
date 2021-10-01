@@ -13,45 +13,42 @@
     
 
 
-
-
-<!-- SHOWCASE -->
-
-    <header id="showcase">
+    <div id="showcase">
         <h1>John Smith</h1>
         <h3>My web projects</h3>
-    </header>
+    </div>
     
-
-
-
     
-<!-- MAIN -->
 
     <main>        
 
 
+        <!-- <div></div> -->
         
-        <!-- MENU BAR -->
-        <nav id="menubar">
+
+        <ul id="leftframe">
             <li data-target="#snapperoonies">Snapperoonies</li>
             <li data-target="#calendar">Calendar</li>            
             <li data-target="#catalogue">Catalogue</li>
             <li data-target="#portfolio">This portfolio</li>
-        </nav>
+        </ul>
         
 
+        <div id="placeholder">
+            <h3>Select a project</h3> 
+        </div>
     
-        <!-- LOWER FRAME -->
-        <div id="lowerframe" class="invisibility">
 
 
-            <!-- TITLE HOLDER -->
-            <section id="titleholder"></section>
+        <div id="rightframe" class="invisibility">
+
+
+
+            <div id="titleholder"></div>
             
             
-            <!-- LINK HOLDER -->
-            <section id="linkholders">
+
+            <div id="linkholders">
 
                 <a id="linkurlholder" href="#" target="_blank">
                     <span class="fa fa-external-link"></span>
@@ -60,18 +57,18 @@
 
                 <a id="githuburlholder" href="#" target="_blank">
                     <span id="githubholder" class="fa fa-github"></span>
-                    <span>View <span id="projecttitleholder2"></span> code on GitHub</span>
+                    <span>View code on GitHub</span>
                 </a>
 
-            </section>
+            </div>
 
 
-            <!-- SUMMARY HOLDER -->
-            <section id="summaryholder"></section>
+
+            <div id="summaryholder"></div>
 
 
-            <!-- DISPLAY FRAME -->
-            <section id="displayframe">          
+
+            <div id="displayframe">          
                    
                 <ul id="tabsframe">                        
                     <li data-target="#tab1">User Experience</li>
@@ -80,15 +77,15 @@
                     <li data-target="#tab4">In-depth</li>
                 </ul>
 
-                <div id="tabpageholder">
-                </div>
-                                
-            </section>
+                <div id="tabpageholder"></div>
 
-            <footer></footer>
+            </div>
+
 
         </div>
 
+
+        <!-- <div></div> -->
 
 
     </main>
@@ -99,175 +96,8 @@
 
 
 
-<!-- CONTENT LIBRARY -->
 
-
-    <aside id="contentlibrary">
-
-
-
-
-        <div id="snapperoonies"             
-            class="post" 
-            data-linkurl="https://snapperoonies.devchop.co.uk" 
-            data-githuburl="https://github.com/DevchopPortfolio/Snapperoonies"
-            >       
-
-            <h2 class="title">Snapperoonies</h2>
-
-            <p class="summary">
-                A brochure site for a fictional photography company that I made in HTML and CSS.
-                Responsive for different screen sizes.
-            </p>
-        
-            <div class="tabpages">
-                <article id="tab1" class="tabpage">
-                    Navigate around a simple 3 page, brochure website of a fictitious photography company. A navigation bar contains links to each page. Parts of the site change their layout to give the best appearance with the current screen width.
-                </article>
-                <article id="tab2" class="tabpage">
-                    HTML and CSS
-                    CSS media queries used for responsivity
-                    CSS flexbox used for the header
-                    CSS grid used in various places for the photographs
-                    CSS variables (custom properties) for storing recurring values
-                    Responsivity with CSS media queries
-                    CSS layouts: grid, flexbox
-                    
-                    Stock photographs from imgur
-                    Icons from google icons
-                    Icons from Font Awesome                    
-                </article>
-                <article id="tab3" class="tabpage">
-                    <h4>HTML tools</h4>
-                    <b>Semantic elements</b>
-                        header, footer, div, section, aside, article, nav
-                
-                    <b>General elements</b>
-                        html, head, body, p, h1, h2, h3, link, br, span, a, img, li, i, b
-                                        
-                    <b>Form elements</b>
-                        form, textarea, select, option, input 
-                                        
-                    <b>Attributes</b>
-                        href, alt, data attributes, id, class, onsubmit, value, name, type
-                
-
-                <h4>CSS tools</h4>                        
-                    <b>Selectors</b>
-                    :root, element type, id, class, attribute value, :hover
-                
-                    <b>Layout properties</b>
-                    display, margin, padding, width, height, border, text-align, line-height, overflow, z-index, position
-                
-                    <b>Other properties</b>
-                    color, cursor, font, box shadow, background, opacity, custom properties (CSS variables)
-                
-                    <b>Layouts</b>
-                    Inline/block, Grid, Flexbox
-                
-                    <b>Units</b>
-                    %, em, rem, VH, px, hex color, fr
-                                    
-
-                </article>
-                <article id="tab4" class="tabpage">
-                    I made this project with HTML and CSS, without javascript.
-
-                    <h4>Responsivity</h4>                    
-                    To check the site's responsivity, view it at various window widths. Most sections of the site use media queries to achieve rearranged layouts at different widths.
-                    
-                    In the stylesheet, the styles are initially set for desktop screen. Media queries apply different values when the viewport width is less than 1100px (laptop), 800px (tablet) and 500px (mobile).
-                                        
-                    The header element is the container for the header. Default styles (wide viewport) set the 'display' property of the header element to 'flex'. This causes its content to be arranged in a single horizontal line. With narrower screens, its display property is 'block', which means the contents don't act as flex items, so they occupy separate rows, which takes up less horizontal space.
-                    
-                    The 'cards' section on the home page is a grid made of 4 items. Using media queries its template changes from 4 columns to 2 columns to 1 column, depending on screen width. A 3 column template is prevented, as this would look uneven in a 4-item-grid.
-                    
-                    On the contact page, the social media icons switch from a column along the left (wide screen) to a row along the top (narrow screen). This is done by changing the container's grid template from 2-columns with 1-row to 1-row with 2-columns.
-                    
-                    
-                    <h4>Google Icons</h4>                    
-                    Icons are imported to the site from the external repository: Google Icons (https://fonts.google.com/icons)
-                    
-                    Google icons are applied to the HTML doc using the following HTML syntax:
-                    
-                    in the HTML, the head element contains a link element with the following attributes:
-                        href="https://fonts.googleapis.com/icon?family=Material+Icons" 
-                        rel="stylesheet"
-                    
-                        Each element that marks-up a particular google icon must have the following attribute:
-                        class="material-icons"
-                        and the name of the particular google icon located in its content.
-                        
-                    
-                    
-                    <h4>Sections</h4>                    
-                    Each page is divided vertically into sections. All markup is located inside these sections. Each page has a header section, footer section, and other sections in between. In the HTML, every section is surrounded by its own outer wrapper element and inner wrapper element. 
-                    
-                    <b>Outer wrappers</b>
-                        Outer wrappers are one of the following: 
-                            - a header element for the header section
-                            - a footer element for the footer section
-                            - a section element for all other sections
-                    
-                    <b>Inner wrappers</b>
-                        Every section has an inner wrapper element. All inner wrappers are div elements with the class attribute of "wrapper". Styles that are consistent for all sections in the site target the inner wrapper via its "wrapper" class. This allows all sections on the site to have the following style rules:
-                            - a width that is 80% the width of the window.
-                            - a left/right margin used to horizontally centre the content.
-                    
-                    
-                    <h4>CSS variables </h4>                    
-                    For some CSS properties, the same values are used repeatedly throughout the stylesheet. In these cases, CSS variables (CSS custom properties) are used to store and apply values. All CSS variables are declared and populated at the top of the stylesheet using the :root selector. CSS variables are used in this website for storing colours.
-                    
-                    
-                    <h4>CSS document</h4>                    
-                    The CSS stylesheet is divided into the following sections:
-                    
-                    <b>Globally inherited properties</b>
-                        root
-                        html
-                    
-                    <b>Recurring elements</b>
-                        section
-                        footer
-                        wrapper
-                        headings
-                        font awesome icons
-                    
-                    <b>Sections on every page</b>
-                        body
-                        header section
-                        footer section
-                    
-                    <b>Pages</b> 
-                                       
-                        HOMEPAGE
-                            hero section
-                            cards section
-                            album section
-                            presentation section
-                            testimonials section
-                        
-                        PRICING PAGE
-                            pricing section 1
-                            pricing section 2
-                        
-                        CONTACT PAGE
-                            contact section 1
-                            contact section 2
-                            contact section 3
-                    
-                    <b>Media queries</b>
-                        ALL PAGES
-                        HOME PAGE - laptop, tablet, mobile
-                        PRICING PAGE - tablet
-                        CONTACT PAGE - laptop, tablet, mobile
-                </article>
-            </div>
-
-        </div>
-
-
-
+    <div id="contentlibrary">
 
 
         <div id="calendar"   
@@ -285,29 +115,27 @@
         
             <div class="tabpages">
 
-                <article id="tab1" class="tabpage">	
+                <div id="tab1" class="tabpage">	
                 First the user can make some selections in the options page:
                     - on which day of the week the calendar's year starts (1st Jan)
                     - whether or not it's a leap year
                     - favourite day of the year
                  
-                Then the calendar is procedurally generated and the browser navigates to it. The calendar is a grid that fills the browser window. Weekdays are columns and months are rows. 
+                Then the calendar is procedurally generated and the browser navigates to it. The calendar fills the browser window. It is a grid with weekdays as columns and months as rows. 
                 
-                Each day of the calendar is a grid 'cell' that has: 
+                Each day is a grid 'cell' that has: 
                     - a number indicating the date
                     - space for user's notes
                     - a colour determined by to its month
                 
-                The user can click on any day cell and type notes into that day. If they enter more text than is able to fit, a vertical scroll bar appears on the cell.
+                The user can click on any day cell and type notes into that day. if they enter more text than is able to fit, a vertical scroll bar appears on the cell.
                 
-                Details of the currently selected day are given in the info bar at the bottom of the window.
-
                 The 'favourite day' cell is automatically labelled.
              
                 
-                </article>
+                </div>
 
-                <article id="tab2" class="tabpage">
+                <div id="tab2" class="tabpage">
                     Written in HTML, CSS and javascript.
                     An app that solves a problem by using an algorithm.
                     Javscript interacts with the DOM to procedurally build an HTML document and create a web page.
@@ -323,12 +151,12 @@
                     Keyboard focus is detected and controlled.
                     Page layout is controlled by CSS box model, flexbox and grid.
                     CSS grid controls the layout of hundreds of HTML elements.
-                </article>
+                </div>
 
-                <article id="tab3" class="tabpage">
+                <div id="tab3" class="tabpage">
                     <h4>HTML tools</h4>                        
                         <b>General elements</b>
-                            html, head, body, p, h1, header, link, script, br, section, main, div, article, span
+                            html, head, body, p, h1, header, link, script, br, section, main, div
                         
                         <b>Form elements</b>
                             form, textarea, select, option, input 
@@ -366,7 +194,6 @@
                             sessionStorage.setItem()
                             location.href
                             console.log()
-                            short-circuit operator
                         
                         <b>DOM utilities</b>
                             querySelector()
@@ -385,9 +212,9 @@
                             getPropertyValue()
                             document.documentElement
                             style.setProperty()                        
-                </article>
+                </div>
 
-                <article id="tab4" class="tabpage">
+                <div id="tab4" class="tabpage">
                     <h4>The Javascript algorithm</h4> 
                     At first the year consists of only 1 day - which exists in the HTML as a div element called #celltemplate - and 1 month - which exists in the HTML as a div element called #monthtemplate.
                      
@@ -395,15 +222,16 @@
                      
                     In the 'createcell' function, each day cell is given:
                         • various data attributes (custom attributes) that store metadata (date, month, weekday, daycode) about that day
-                        • a 'click' event listener, for triggering the text input form (see below)                        
+                        • a 'click' event listener, for triggering the text input form (see below)
+                        • another 'click' event listener, which means, when clicked, the day cell logs its meta data to the console (the logger function)
                      
                     
                     <h4>Behaviour of the text input form</h4>                         
-                        The text input form is controlled by the 'formworker' function.
+                        The text input form is controled by the 'formworker' function
                         When the user clicks a day cell, the cell temporarily becomes the parent element of the HTML text input form, which exists in the HTML as the form element and textarea element. This is done using the DOM utility: appendChild()
                         Any text already in the day cell is copied into the form. The user can then use the form to edit the text in the day cell. 
                         When the user clicks elsewhere, the text input form loses keyboard focus, which triggers an event listener, which calls an event-handler function. The function 
-                            - removes the form (using DOM utility: remove) from the day cell
+                            - removes the form (using DOM utility: remove) 
                             - copies the form's text (using the text input's 'value' property) 
                             - pastes the text to the day cell using the cell's innerHTML property
                      
@@ -423,16 +251,42 @@
                         An array called months contains an array item for each month
                         Each array item contains an object which contains data on that month including each month's 'start week'. A 'for loop' uses this data to calculate the months 'span' value (how many weeks that month covers). From this the month's height (row height) in rem units is calculated.
                         This height value is transferred from javascript to the element's inline CSS using the style.setProperty() function
-                            
-                        
-                    <h4>Metadata</h4>   
-                        Each day exists as a separate HTML element. 
-                        Each of these elements contains metadata about that day, which is stored in that element's data attributes.                         
-                        This metadata describes the day's date, weekday name (e.g, Monday), month name (e.g, January), week number, and day number (ranging from 0 to 365).                         
-                        When the user clicks a day cell, that day's meta data is displayed in the Info Bar at the bottom of the window.
-                        The user's click calls the cell's event listener function which uses the getAttribute() method to get the day's meta data and transfer it to the Info Bar as text.
-                </article>
+                                       
+                </div>
 
+            </div>
+
+        </div>
+
+
+
+
+
+        <div id="snapperoonies"             
+            class="post" 
+            data-linkurl="https://snapperoonies.devchop.co.uk" 
+            data-githuburl="https://github.com/DevchopPortfolio/Snapperoonies"
+            >       
+
+            <h2 class="title">Snapperoonies</h2>
+
+            <p class="summary">
+                A website made in HTML + CSS
+            </p>
+        
+            <div class="tabpages">
+                <div id="tab1" class="tabpage">
+
+                </div>
+                <div id="tab2" class="tabpage">
+
+                </div>
+                <div id="tab3" class="tabpage">
+
+                </div>
+                <div id="tab4" class="tabpage">
+
+                </div>
             </div>
 
         </div>
@@ -455,60 +309,60 @@
         
             <div class="tabpages">
 
-                <article id="tab1" class="tabpage">
+                <div id="tab1" class="tabpage">
                 The user can browse a gallery of products sold by the fictitious company hPlusSport. 
                 
                 The gallery shows a title and thumbnail image for each item. When the user clicks on a product it is presented in the left frame with a larger image, description and price.
-                </article>
+                </div>
 
-                <article id="tab2" class="tabpage">
+                <div id="tab2" class="tabpage">
                     A REST client that creates an XHR request that sends a GET request to a REST API.
                     A JSON text file is received and parsed into a javascript collection.
                     Javascript DOM utilities transfer data from a javascript collection to the HTML document.
                     Element nodes are called, copied and inserted into the DOM.
                     Presentation is controlled using CSS tools such as grid, flexbox, transform, transition.                    
-                </article>
+                </div>
 
-                <article id="tab3" class="tabpage">
-                    <h4>HTML tools</h4>
-                        class attribute
-                        id attribute
-                    
-                    
-                    <h4>CSS tools</h4>
-                        grid
-                        flex
-                        overflow property
-                        transition property
-                        transform property
-                    
-                    
-                    <h4>Javascript tools</h4>                
-                    <b>General</b>
-                        forEach method
-                        addEventListener method
-                        new keyword
-                    
-                    <b>DOM</b>
-                        querySelector method
-                        cloneNode method
-                        removeAttribute method
-                        setAttribute method
-                        appendChild method
-                        classList property
-                        innerText property
-                        innerHTML property
-                    
-                    <b>REST client</b>
-                        XMLHttpRequest
-                        open() method
-                        send() method
-                        JSON.parse() method
-                        response property
-                        onload eventProperty                    
-                    </article>
+                <div id="tab3" class="tabpage">
+                <h4>HTML tools</h4>
+                    class attribute
+                    id attribute
+                
+                
+                <h4>CSS tools</h4>
+                    grid
+                    flex
+                    overflow property
+                    transition property
+                    transform property
+                
+                
+                <h4>Javascript tools</h4>                
+                <b>General</b>
+                    forEach method
+                    addEventListener method
+                    new keyword
+                
+                <b>DOM</b>
+                    querySelector method
+                    cloneNode method
+                    removeAttribute method
+                    setAttribute method
+                    appendChild method
+                    classList property
+                    innerText property
+                    innerHTML property
+                
+                <b>REST client</b>
+                    XMLHttpRequest
+                    open() method
+                    send() method
+                    JSON.parse() method
+                    response property
+                    onload eventProperty                    
+                </div>
 
-                <article id="tab4" class="tabpage">
+                <div id="tab4" class="tabpage">
                     hPlusSport is a fictitious company created by LinkedIn Corporation for the creation and development of educational training materials. It includes a website (https://hplussport.com/) and an API.
 
                     Using HTML, CSS and Javascript I created a webpage that acts as a simple REST client. 
@@ -554,9 +408,9 @@
                         - the cloneNode() method makes a copy of the HTML card template element.
                         - the new card's child elements are populated with the product title and product image.
                         - the new card is given an event listener that will trigger when the user clicks the card, and will call the 'populatefocusframe' function, which puts the card's product details in the left frame.
-                        - the new card is added to the gallery by attaching it to the gallery container element (#lowerframe).
+                        - the new card is added to the gallery by attaching it to the gallery container element (#rightframe).
                     
-                </article>
+                </div>
                     
             </div>
 
@@ -580,14 +434,14 @@
         
             <div class="tabpages">
 
-                <article id="tab1" class="tabpage">
+                <div id="tab1" class="tabpage">
                     The user navigates through descriptions of my projects by using using buttons and tabs.                    
                     The sidebar on the left contains buttons to select a project.                     
                     The display frame on the right displays information on the currently selected project. Each project is presented in the same layout template, with title, links, summary and tabs. The text description for each project is sub divided into 4 clickable tabs.                    
                     On larger screen sizes, the main content of the page matches the height of the browser window.                    
-                </article>
+                </div>
 
-                <article id="tab2" class="tabpage">
+                <div id="tab2" class="tabpage">
                     The HTML document contains a template area for displaying information and a content storage area for storing information.
                     Javascript modifies the webpage by inserting element nodes in the DOM and editing attributes in the DOM.
                     Javascript indirectly influences the page's appearance by editing the style attributes on element nodes in order to change which elements are targeted by which CSS rule sets.
@@ -595,9 +449,9 @@
                     CSS transitions create smooth movement.
                     Layout is controlled using CSS flexbox and grid.
                     Icons are imported into the web page from an external repository (Font Awesome).                
-                </article>
+                </div>
 
-                <article id="tab3" class="tabpage">                    
+                <div id="tab3" class="tabpage">                    
                     <h4>HTML tools</h4>
                     data (custom) attributes
                     id attributes
@@ -646,9 +500,9 @@
                     
                     <b>Browser</b>
                         window.scrollTo()                       
-                </article>
+                </div>
 
-                <article id="tab4" class="tabpage">
+                <div id="tab4" class="tabpage">
                     <h4>Icons from font awesome</h4>
 
                     icon for 'open in new tab'
@@ -719,7 +573,7 @@
 
                     
                     
-                </article>
+                </div>
 
             </div>
 
@@ -734,7 +588,7 @@
 
 
 
-    </aside>
+    </div>
 
 
 </body>
