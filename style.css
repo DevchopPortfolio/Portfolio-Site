@@ -213,9 +213,10 @@ main {
 }
 
 #linkholders a {
-    display: inline-block;
+    padding: 0.5rem 0.8rem; 
     text-decoration:none;     
-    /* width: 15rem; */    
+    /* display: inline-block; */    
+    /* width: 15rem; */           
 }
 
 #linkholders a:hover {
@@ -228,7 +229,12 @@ main {
     vertical-align: middle;   
 }
 
-
+#linkurlholder {
+    background: darkslateblue;
+    border-radius: 0.4rem;
+    color: white;
+    box-shadow: 2px 2px 2px #0008;
+}
 
 
 
@@ -320,6 +326,7 @@ main {
     overflow-y:auto;
     
     background: #445;
+    background: linear-gradient(155deg, #445 10rem, #101020);
     color: white;
 }
 
