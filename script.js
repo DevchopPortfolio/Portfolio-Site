@@ -20,9 +20,9 @@ document.querySelectorAll('#menubar li').forEach( thisButton => {
     thisButton.addEventListener('click', (pingReport) => {
 
         //scroll to bottom so that <main> fills the screen
-        if (window.innerHeight > 600) {
-            window.scrollTo(0, document.body.scrollHeight);                      //browser scrolls down
-        }       
+        // if (window.innerHeight > 600) {
+        //     window.scrollTo(0, document.body.scrollHeight);                      //browser scrolls down
+        // }       
         
         buttonActivate(pingReport.target)
 

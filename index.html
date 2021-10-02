@@ -15,82 +15,72 @@
 
 
 
-<!-- SHOWCASE -->
+<!-- HEADER -->
 
     <header id="showcase">
+
         <h1>John Smith</h1>
+       
         <h3>My web projects</h3>
+        
+        <nav id="menubar">
+            <li data-target="#snapperoonies">Snapperoonies</li>
+            <li data-target="#calendar">Calendar</li>            
+            <li data-target="#catalogue">Catalogue</li>
+            <li data-target="#portfolio">This portfolio</li>
+        </nav>        
+
     </header>
     
 
 
 
     
-<!-- MAIN -->
+<!-- MAIN -->    
+    <main id="lowerframe" class="invisibility">
 
-    <main>        
 
-
+        <!-- TITLE HOLDER -->
+        <section id="titleholder"></section>
         
-        <!-- MENU BAR -->
-        <nav id="menubar">
-            <li data-target="#snapperoonies">Snapperoonies</li>
-            <li data-target="#calendar">Calendar</li>            
-            <li data-target="#catalogue">Catalogue</li>
-            <li data-target="#portfolio">This portfolio</li>
-        </nav>
         
+        <!-- LINK HOLDER -->
+        <section id="linksholder">
 
+            <a id="linkurlholder" href="#" target="_blank">
+                <span class="fa fa-external-link"></span>
+                <span>Visit <span id="projecttitleholder">Add title here</span> site</span>
+            </a>
+
+            <a id="githuburlholder" href="#" target="_blank">
+                <span id="githubholder" class="fa fa-github"></span>
+                <span>View <span id="projecttitleholder2"></span> code on GitHub</span>
+            </a>
+
+        </section>
+
+
+        <!-- SUMMARY HOLDER -->
+        <section id="summaryholder"></section>
+
+
+        <!-- DISPLAY FRAME -->
+        <section id="displayframe">          
+                
+            <ul id="tabsframe">                        
+                <li data-target="#tab1">User Experience</li>
+                <li data-target="#tab2">Concepts</li>
+                <li data-target="#tab3">Tools List</li>
+                <li data-target="#tab4">In-depth</li>
+            </ul>
+
+            <div id="tabpageholder">
+            </div>
+                            
+        </section>
+
+        <footer></footer>
     
-        <!-- LOWER FRAME -->
-        <div id="lowerframe" class="invisibility">
-
-
-            <!-- TITLE HOLDER -->
-            <section id="titleholder"></section>
-            
-            
-            <!-- LINK HOLDER -->
-            <section id="linkholders">
-
-                <a id="linkurlholder" href="#" target="_blank">
-                    <span class="fa fa-external-link"></span>
-                    <span id="projecttitleholder">Add title here</span>
-                </a>
-
-                <a id="githuburlholder" href="#" target="_blank">
-                    <span id="githubholder" class="fa fa-github"></span>
-                    <span>View <span id="projecttitleholder2"></span> code on GitHub</span>
-                </a>
-
-            </section>
-
-
-            <!-- SUMMARY HOLDER -->
-            <section id="summaryholder"></section>
-
-
-            <!-- DISPLAY FRAME -->
-            <section id="displayframe">          
-                   
-                <ul id="tabsframe">                        
-                    <li data-target="#tab1">User Experience</li>
-                    <li data-target="#tab2">Concepts</li>
-                    <li data-target="#tab3">Tools List</li>
-                    <li data-target="#tab4">In-depth</li>
-                </ul>
-
-                <div id="tabpageholder">
-                </div>
-                                
-            </section>
-
-            <footer></footer>
-
-        </div>
-
-
-
     </main>
 
 
@@ -115,8 +105,7 @@
 
             <h2 class="title">Snapperoonies</h2>
 
-            <p class="summary">
-                A brochure site I made in HTML and CSS for a fictitious photography company.
+            <p class="summary">A brochure site I made in HTML and CSS for a fictitious photography company.
                 Responsive for different screen sizes.
             </p>
         
@@ -167,8 +156,6 @@
                 
                     <b>Units</b>
                     %, em, rem, VH, px, hex color, fr
-                                    
-
                 </article>
                 <article id="tab4" class="tabpage">
                     I made this project with HTML and CSS, without javascript.
@@ -278,8 +265,7 @@
 
             <h2 class="title">Calendar</h2>            
 
-            <p class="summary">
-                An app I made in HTML, CSS and javascript that procedurally generates a 1 year calendar.
+            <p class="summary">An app I made in HTML, CSS and javascript that procedurally generates a 1 year calendar.
                 The user can input settings and type notes into each day.     
             </p>
         
@@ -302,9 +288,7 @@
                 
                 Details of the currently selected day are given in the info bar at the bottom of the window.
 
-                The 'favourite day' cell is automatically labelled.
-             
-                
+                The 'favourite day' cell is automatically labelled.                
                 </article>
 
                 <article id="tab2" class="tabpage">
@@ -449,8 +433,7 @@
 
             <h2 class="title">Catalogue</h2>
 
-            <p class="summary">
-                A REST client I made using HTML, CSS and Javascript. When the page is opened in the browser it accesses the REST API of a fictitious sports company, receives the response as a JSON file, and renders the content in the webpage so the user can browse the company's products.                
+            <p class="summary">A REST client I made using HTML, CSS and Javascript. When the page is opened in the browser it accesses the REST API of a fictitious sports company, receives the response as a JSON file, and renders the content in the webpage so the user can browse the company's products.                
             </p>
         
             <div class="tabpages">
@@ -554,8 +537,7 @@
                         - the cloneNode() method makes a copy of the HTML card template element.
                         - the new card's child elements are populated with the product title and product image.
                         - the new card is given an event listener that will trigger when the user clicks the card, and will call the 'populatefocusframe' function, which puts the card's product details in the left frame.
-                        - the new card is added to the gallery by attaching it to the gallery container element (#lowerframe).
-                    
+                        - the new card is added to the gallery by attaching it to the gallery container element (#lowerframe).                    
                 </article>
                     
             </div>
@@ -564,7 +546,7 @@
 
 
 
-        
+       
 
         <div id="portfolio"             
             class="post"                
@@ -574,8 +556,7 @@
 
             <h2 class="title">Portfolio</h2>
 
-            <p class="summary">
-                This portfolio website gives a description of each of my web dev projects. It features buttons and tabs. I created this site using HTML, CSS and Javascript.           
+            <p class="summary">This portfolio website gives a description of each of my web dev projects. It features buttons and tabs. I created this site using HTML, CSS and Javascript.           
             </p>
         
             <div class="tabpages">
@@ -715,22 +696,12 @@
                         element.classList.add(classname)
                     
                     <b>Controlling which tabpage is targeted by which tab</b>
-                    Each tab element contains a data attribute called 'data-target'. Its value is a string that specifies the ID (value of the element's ID attribute) of its target tabpage element. This value is aquired using the tab element's getAttribute() method and is used to target the correct tabpage by including it in a querySelector() method.
-
-                    
-                    
+                    Each tab element contains a data attribute called 'data-target'. Its value is a string that specifies the ID (value of the element's ID attribute) of its target tabpage element. This value is aquired using the tab element's getAttribute() method and is used to target the correct tabpage by including it in a querySelector() method.                    
                 </article>
 
             </div>
 
         </div>
-
-
-
-
-
-
-
 
 
 
