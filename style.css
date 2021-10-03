@@ -1,15 +1,21 @@
+:root {    
+    --colprimary: darkslateblue;
+    --coloffblack: #111;
+    --coltabs: #DDE;
+    --colmiddlegrey: #445;    
+    --coltabsfade: #112;
+}
+
 
 body {
     min-height: 80rem;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     line-height: 1.8rem;    
-    margin: 0;    
+    margin: 0;
 }
 
 
-
-
-/* MULTIPLES */
+/* RE-OCCURING ELEMENTS */
 
 h1 { 
     font-size: 3rem;
@@ -23,14 +29,10 @@ h4 {
     font-size: 1.3rem;
     margin: 0;
     padding: 0;
-
 }
 
 
-
-
-
-
+/* INVISIBLE ELEMENTS */
 
 #contentlibrary,
 #main.invisibility
@@ -39,17 +41,7 @@ h4 {
 }
 
 
-
-
-
-
-
-
-
-
                 /* HEADER */              
-
-
 
 header {
     text-align: center;    
@@ -58,9 +50,8 @@ header {
     /* min-height: 10rem; */    
     /* background: #316; */
     /* background: darkslateblue; */
-    background-image : linear-gradient(90deg, darkslateblue 35rem, #113)
+    background-image : linear-gradient(90deg, var(--colprimary) 35rem, #113)
 }
-
 
 header h1 {
     margin: 0;
@@ -73,7 +64,6 @@ header h3 {
     margin-bottom: 1.2rem;
     color: #DDD;     
 }
-
 
 
 /* menubar */
@@ -108,7 +98,7 @@ header #menubar li {
 
     font-size: 1.2em;    
     /* background-color: #DDE;     */
-    background: #111;
+    background: var(--coloffblack);
     color: white;    
 }
 
@@ -120,7 +110,6 @@ header #menubar li {
         padding: 0.4rem 0.4rem;   
     }
 }
-
 
 header #menubar li:not(.active):hover {        
     /* opacity: 0.5; */
@@ -136,42 +125,17 @@ header #menubar li.active {
     font-weight: bold;        
     box-shadow: 0 0 0;   
     background: white;
-    /* background: #111; */
+    /* background: var(--coloffblack); */
     color: black;      
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                 /* MAIN */
 
-
-main {    
-
+main {   
     max-width: 60rem;
     width:85vw;
     margin: 0 auto;
-    /* padding: 1rem; */
-
-    /* display: grid; */
-    /* grid-template-rows: auto auto auto 1fr; */
-    /* gap: 0;      */
-    /* overflow:hidden;     */
-    
-    /* background: lightgrey;   */
 }
 
 #titleholder {
@@ -181,11 +145,13 @@ main {
     margin: 5rem 0 4rem 0;
 }
 
+
+/* links holder */
+
 #linksholder {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    
+    justify-content: space-between;    
 }
 
 #linksholder a {
@@ -196,7 +162,7 @@ main {
 }
 
 #linksholder a:hover {
-    opacity: 0.7;
+    opacity: 0.8;
     box-shadow: none;
 }
 
@@ -207,18 +173,14 @@ main {
 }
 
 #linkurlholder {
-    background: darkslateblue;
+    background: var(--colprimary);
     border-radius: 0.4rem;
     color: white;
     box-shadow: 2px 2px 2px #0008;
 }
 
 
-
-
-
-
-
+/* summary holder */
 
 #summaryholder {
     /* min-height: 8rem;     */
@@ -233,34 +195,19 @@ main {
 }
 
 
-
-
-
-
+/* display frame */
 
 #displayframe {        
     margin: 0;
-    /* overflow: hidden; */    
-    /* padding: 1rem; */
-    /* display: grid;     */
-    /* grid-template-rows: auto 1fr 1rem; */
-    /* background: lightskyblue;         */
 }
 
 
+/*  tabs frame */
 
-
-
-
-
-
-#tabsframe {    
-    
+#tabsframe {       
     margin: 0;
     padding: 0;
-
-    list-style-type: none;     
-    
+    list-style-type: none;       
     display: flex;
     justify-content: start;
     font-size: 1.1em;
@@ -270,7 +217,7 @@ main {
 #tabsframe li {    
     padding: 0.5rem 1rem;
     cursor: pointer;
-    background: #DDE;       
+    background: var(--coltabs);       
 }
 
 #tabsframe li:not(.active):hover {       
@@ -282,15 +229,12 @@ main {
     color: black;
     /* background: #DDB; */
     /* background: #EEF; */
-    background: #445;
+    background: var(--colmiddlegrey);
     color: white;
 }
 
 
-
-
-
-
+/* tabs */
 
 #tabpageholder {    
     width: auto;    
@@ -298,8 +242,8 @@ main {
     
     /* overflow-y:auto; */
     
-    background: #445;
-    background: linear-gradient(155deg, #445 10rem, #101020);
+    background: var(--colmiddlegrey);
+    background: linear-gradient(155deg, var(--colmiddlegrey) 10rem, var(--coltabsfade));
     color: white;
 }
 
@@ -313,9 +257,7 @@ main {
 }
 
 
-
-
-
+/* footer */
 
 footer {
     height: 1rem;

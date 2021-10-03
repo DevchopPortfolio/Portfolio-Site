@@ -10,9 +10,6 @@
     <script async src="script.js"></script>
 </head>
 <body>
-    
-
-
 
 
 <!-- HEADER -->
@@ -32,9 +29,6 @@
 
     </header>
     
-
-
-
     
 <!-- MAIN -->    
     <main id="lowerframe" class="invisibility">
@@ -84,17 +78,8 @@
     </main>
 
 
-
-
-
-
-
 <!-- CONTENT LIBRARY -->
-
-
     <aside id="contentlibrary">
-
-
 
 
         <div id="snapperoonies"             
@@ -183,8 +168,7 @@
                     
                         Each element that marks-up a particular google icon must have the following attribute:
                         class="material-icons"
-                        and the name of the particular google icon located in its content.
-                        
+                        and the name of the particular google icon located in its content.                        
                     
                     
                     <h4>Sections</h4>                    
@@ -228,20 +212,13 @@
                     <b>Pages</b> 
                                        
                         HOMEPAGE
-                            hero section
-                            cards section
-                            album section
-                            presentation section
-                            testimonials section
+                            hero section, cards section, album section, presentation section, testimonials section
                         
                         PRICING PAGE
-                            pricing section 1
-                            pricing section 2
+                            pricing section 1, pricing section 2
                         
                         CONTACT PAGE
-                            contact section 1
-                            contact section 2
-                            contact section 3
+                            contact section 1, contact section 2, contact section 3
                     
                     <b>Media queries</b>
                         ALL PAGES
@@ -252,9 +229,6 @@
             </div>
 
         </div>
-
-
-
 
 
         <div id="calendar"   
@@ -373,14 +347,13 @@
 
                 <article id="tab4" class="tabpage">
                     <h4>The Javascript algorithm</h4> 
-                    At first the year consists of only 1 day - which exists in the HTML as a div element called #celltemplate - and 1 month - which exists in the HTML as a div element called #monthtemplate.
-                     
-                    A loop cycles through the months. That loop contains another loop that cycles through the days of that month. In each loop cycle, the 'createcell' function is called to make a copy of #celltemplate. This process creates all the days of the calendar as HTML elements.
-                     
+                    At first the year consists of only 1 day and 1 month which exiss as an HTML elements. At runtime javascript creates copies of these elements to build the calendar.
+                    
+                    The day element is a div called #celltemplate. The month element is a div called #monthtemplate.                     
+                    A loop cycles through the months. That loop contains another loop that cycles through the days of that month. In each loop cycle, the 'createcell' function is called to make a copy of #celltemplate. This process creates all the days of the calendar as HTML elements.                     
                     In the 'createcell' function, each day cell is given:
                         • various data attributes (custom attributes) that store metadata (date, month, weekday, daycode) about that day
-                        • a 'click' event listener, for triggering the text input form (see below)                        
-                     
+                        • a 'click' event listener, for triggering the text input form (see below)                          
                     
                     <h4>Behaviour of the text input form</h4>                         
                         The text input form is controlled by the 'formworker' function.
@@ -389,16 +362,14 @@
                         When the user clicks elsewhere, the text input form loses keyboard focus, which triggers an event listener, which calls an event-handler function. The function 
                             - removes the form (using DOM utility: remove) from the day cell
                             - copies the form's text (using the text input's 'value' property) 
-                            - pastes the text to the day cell using the cell's innerHTML property
-                     
+                            - pastes the text to the day cell using the cell's innerHTML property                     
                      
                     <h4>Column headings</h4>                     
                     The upper grid displays column headings containing the names of the days of the week
                      
                     CSS sets the uppergrid as position: fixed, so the grid stays at the top of the browser viewport regardless of vertical scrolling.
                      
-                    A header element contains seven h2 elements which contain the week day names. The header is a CSS grid so that the weekday names are in columns that line up precisely with the grid columns of the lower grid.
-                     
+                    A header element contains seven h2 elements which contain the week day names. The header is a CSS grid so that the weekday names are in columns that line up precisely with the grid columns of the lower grid.                     
                       
                     <h4>Left sidebar</h4>                     
                     The left sidebar of the lower grid is a single column that displays each month name inside a box. A javascript algorithm is used to determine the height of each month box in the sidebar, which depends on the number of weeks that each particular month spans.
@@ -406,8 +377,7 @@
                     <b>The sidebar algorithm</b>
                         An array called months contains an array item for each month
                         Each array item contains an object which contains data on that month including each month's 'start week'. A 'for loop' uses this data to calculate the months 'span' value (how many weeks that month covers). From this the month's height (row height) in rem units is calculated.
-                        This height value is transferred from javascript to the element's inline CSS using the style.setProperty() function
-                            
+                        This height value is transferred from javascript to the element's inline CSS using the style.setProperty() function                            
                         
                     <h4>Metadata</h4>   
                         Each day exists as a separate HTML element. 
@@ -420,9 +390,6 @@
             </div>
 
         </div>
-
-
-
 
 
         <div id="catalogue"             
@@ -543,9 +510,6 @@
             </div>
 
         </div>
-
-
-
        
 
         <div id="portfolio"             
@@ -583,8 +547,7 @@
                     data (custom) attributes
                     id attributes
                     class attributes
-                    icons from font awesome                    
-                    
+                    icons from font awesome                       
                     
                     <h4>CSS tools</h4>
                     <b>Properties</b>
@@ -608,7 +571,6 @@
                         grid
                         flex                     
                     
-
                     <h4>Javascript tools</h4>
                     <b>Array methods</b>
                         forEach()
@@ -629,27 +591,13 @@
                         window.scrollTo()                       
                 </article>
 
-                <article id="tab4" class="tabpage">
-                    <h4>Icons from font awesome</h4>
-
-                    icon for 'open in new tab'
-                    icon for 'github'
-                    
-                    To give the page access to Font Awesome icons, a link element is included in the HTML document's head section, with the following attributes:
-                        link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-                    
-                    Then an icon can be inserted in an HTML element by giving the element the following class name:
-                        fa fa-nameoficon
-                    
-                    
+                <article id="tab4" class="tabpage">                    
                     <h4>Buttons and Tabs</h4>
                     The page has clickable buttons and clickable tabs. They change what is displayed on the page by causing javascript to edit the DOM. They each achieve this in a different way
                         - the buttons work by causing DOM elements to be copied and inserted
-                        - the tabs work by causing attributes on DOM elements to be edited
+                        - the tabs work by causing attributes on DOM elements to be edited                    
                     
-                    
-                    <h4>Buttons</h4>
-                    
+                    <h4>Buttons</h4>                    
                     There are multiple 'posts'. Each post contains the data (title, links, summary, tabpages) for a different project.
                     
                     The user clicks a button in the left menu to select which post to view in the template on the right. Javascript then copies that post's data from the content library to the display template, replacing whatever content the template currently contained.
@@ -668,11 +616,9 @@
                     Each button has a data attribute called data-target. Its value indicates which post the button targets.
                     Javascript gets this string value using the getAttribute() method, and uses it in a querySelector to target the correct post element.
                     The cloneNode() method is then used to make copies of the various HTML elements in the post.
-                    The appendChild() method is then used to append these copies to various parts of the template.
+                    The appendChild() method is then used to append these copies to various parts of the template.                    
                     
-                    
-                    <h4>Tabs</h4>
-                    
+                    <h4>Tabs</h4>                    
                     In the HTML document are 4 clickable tabs. Each has a corresponding tabpage element that contains text. The tabpage elements are located in the #tabpageholder element and belong to the tabpage class (i.e, have a value of 'tabpage' in their class attribute)
                     
                     The tabpage elements are invisible, due to the following CSS ruleset:
@@ -697,6 +643,13 @@
                     
                     <b>Controlling which tabpage is targeted by which tab</b>
                     Each tab element contains a data attribute called 'data-target'. Its value is a string that specifies the ID (value of the element's ID attribute) of its target tabpage element. This value is aquired using the tab element's getAttribute() method and is used to target the correct tabpage by including it in a querySelector() method.                    
+
+                    <h4>Icons from font awesome</h4>                    
+                    To give the page access to Font Awesome icons, a link element is included in the HTML document's head section, with the following attributes:
+                        link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+                    
+                    Then an icon can be inserted in an HTML element by giving the element the following class name:
+                        fa fa-nameoficon     
                 </article>
 
             </div>
@@ -704,9 +657,6 @@
         </div>
 
 
-
     </aside>
-
-
 </body>
 </html>
