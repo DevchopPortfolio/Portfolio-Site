@@ -69,7 +69,7 @@ header h3 {
 
 /* menubar */
 
-header #menubar {        
+#menubar {        
 
     margin: 0;
     /* height: 10vh; */    
@@ -89,7 +89,7 @@ header #menubar {
     /* background: darkslateblue; */    
 }
 
-header #menubar li {    
+#menubar li {    
     min-width: 8rem;
     padding: 0.7rem 0.8rem;    
     cursor: pointer;    
@@ -103,18 +103,30 @@ header #menubar li {
     color: white;    
 }
 
-@media (max-width: 870px) {
-    header #menubar {    
+/* helps with clicking on the buttons */
+#menubar li .menuText,
+#menubar li .fa
+{
+    pointer-events: none
+}
+
+/* responsivity of menubar */
+@media (max-width: 850px) {
+    #menubar {    
         justify-content:space-around;
     }
-    
-    header #menubar li {
+
+    #menubar li {
         /* width: auto; */
         min-width: 2.1rem;
         /* font-size: 0.8em;         */
         padding: 0.7rem 0.4rem;   
         margin: 0 0.5rem;
         flex-grow: 1;
+    }
+
+    #menubar .menuText {
+        display: none;
     }
 }
 
@@ -128,7 +140,7 @@ header #menubar li {
     }
 } */
 
-header #menubar li:not(.active):hover {        
+#menubar li:not(.active):hover {        
     /* opacity: 0.5; */
     background: #335;
     color: white;
@@ -136,7 +148,7 @@ header #menubar li:not(.active):hover {
     /* transform: scaleY(1.3); */
 }
 
-header #menubar li.active {
+#menubar li.active {
     /* background:#116; */    
     transform: translateY(0.8rem);    
     font-weight: bold;        
@@ -145,6 +157,7 @@ header #menubar li.active {
     /* background: var(--coloffblack); */
     color: black;      
 }
+
 
 
                 /* MAIN */
