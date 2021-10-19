@@ -15,6 +15,12 @@ body {
 }
 
 
+#contentlibrary
+{
+    display: none;
+}
+
+
 /* RE-OCCURING ELEMENTS */
 
 h1 { 
@@ -32,13 +38,6 @@ h4 {
 }
 
 
-/* INVISIBLE ELEMENTS */
-
-#contentlibrary,
-#main.invisibility
-{
-    display: none;
-}
 
 
                 /* HEADER */              
@@ -84,14 +83,10 @@ header #menubar {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: flex-end;
+    /* align-items: flex-end; */
 
     /* background: darkslateblue; */    
 }
-
-
-
-
 
 header #menubar li {    
     min-width: 8rem;
@@ -107,9 +102,22 @@ header #menubar li {
     color: white;    
 }
 
-@media (max-width: 690px) {
-   
+@media (max-width: 870px) {
+    header #menubar {    
+        justify-content:space-around;
+    }
+    
+    header #menubar li {
+        /* width: auto; */
+        min-width: 2.1rem;
+        /* font-size: 0.8em;         */
+        padding: 0.4rem 0.4rem;   
+        margin: 0 0.5rem;
+        flex-grow: 1;
+    }
+}
 
+/* @media (max-width: 690px) {   
     header #menubar li {
         width: auto;
         min-width: 1rem;
@@ -117,7 +125,7 @@ header #menubar li {
         padding: 0.4rem 0.4rem;   
         margin: 0 0.1rem;
     }
-}
+} */
 
 header #menubar li:not(.active):hover {        
     /* opacity: 0.5; */
