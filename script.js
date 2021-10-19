@@ -36,7 +36,7 @@ function buttonActivate (thisButton) {
         //     thisbutton = thisbutton.parentNode
         // }
 
-        document.querySelector('#lowerframe').classList.remove('invisibility');
+        // document.querySelector('#lowerframe').classList.remove('invisibility');
         // document.querySelector('#placeholder').classList.add('invisibility')      
 
         document.querySelectorAll('#menubar li').forEach(otherTab => {
@@ -45,7 +45,7 @@ function buttonActivate (thisButton) {
 
         thisButton.classList.add('active');                                  //add 'active' class to this button
 
-        // link to the correct post in the content library        
+        // link to the corresponding post in the content library        
         let thisPost = document.querySelector('.post' + thisButton.getAttribute('data-target'));
             
         // console.log('.post' + thisbutton.getAttribute('data-target'))
@@ -59,7 +59,7 @@ function buttonActivate (thisButton) {
         let linkUrl = thisPost.getAttribute('data-linkurl');
         let githubUrl = thisPost.getAttribute('data-githuburl');
 
-        //populate the template with thispost        
+        //populate the HTML template with thispost        
         titleHolder.innerHTML = '';
         titleHolder.appendChild(titleToMove.cloneNode(true));
         summaryHolder.innerHTML = '';
