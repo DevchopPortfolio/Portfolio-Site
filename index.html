@@ -25,6 +25,7 @@
             <li data-target="#calendar">Calendar</li>            
             <li data-target="#catalogue">Catalogue</li>
             <li data-target="#portfolio">This portfolio</li>
+            <li data-target="#wordpress">Wordpress</li>
         </nav>        
 
     </header>
@@ -655,6 +656,125 @@
             </div>
 
         </div>
+
+
+        <div id="wordpress"             
+            class="post"
+            data-linkurl="https://sub1.devchop.co.uk"
+            data-githuburl="#"
+            >
+
+            <h2 class="title">Wordpress Demo</h2>
+
+            <p class="summary">A website I made in Wordpress. An alternative version of an existing website. The site I have copied is the official site of Mark Lewisohn, a professional writer, historian and biographer.
+            </p>
+        
+            <div class="tabpages">
+
+                <article id="tab1" class="tabpage">
+                    <b>Both the original website and my version of the website contain:</b>
+                    Information on the author's books
+                    Archive of embedded audio and video streaming media
+                    Embedded twitter feed
+                    Contact form
+                    Social media links
+                    Privacy policy
+                    Links to products on Amazon
+                    Internal links
+                </article>
+
+                <article id="tab2" class="tabpage">                                
+                    A website made in WordPress.
+                    An alternative version of an existing website, using the same content but a different layout and style.
+                    Kadence Theme's customizer specifies content and style of generic features.
+                    Gutenberg page builder with its various block types controls layout and adds content.
+                    Posts are used to organise a collection of streaming media.
+                    Gutenberg's 'media embed blocks' embed streaming media into posts.
+                    Posts belong to specific categories, so that different posts appear in different archive pages.
+                    WordPress plugins provide extra features to the page builder (a visitor's form and twitter feed).
+                </article>
+
+                <article id="tab3" class="tabpage">
+                    <h4>CMS: Wordpress</h4>                    
+                    Pages, posts, plugins, categories, theme, page builder
+                    
+
+                    <h4>Theme: Kadence</h4>                    
+                    Header, footer, general page layouts, fonts, colours, single post layout, posts archive layout, menus
+                    
+
+                    <h4>Page Builder:  Gutenberg </h4>                    
+                    With extensions: kadence blocks, and twitter feed
+                    
+
+                    <h4>Gutenberg blocks</h4>                    
+                    <b>Layout blocks:</b> 
+                    Group, columns, column, cover, spacer
+                    
+                    <b>Basic content blocks:</b>                    
+                    Image, heading, paragraph, button, quote, pullquote
+                    
+                    <b>Media embed blocks:</b>                    
+                    Custom html block, embed block, youtube embed block, soundcloud embed block, vimeo embed block
+                    
+                    <b>Twitter feed block</b>                    
+                    
+                    <b>Kadence blocks:</b>                    
+                    Form                    
+
+
+                    <h4>Plugins</h4>                    
+                    WPvivid Backup
+                    Kadence Blocks
+                    WP Mail SMTP
+                    Custom Twitter Feeds                    
+                </article>
+
+                <article id="tab4" class="tabpage">    
+                    <h4>Background</h4> 
+                    While studying Wordpress, I happened to visit the official site of author Mark Lewisohn: <a href="https://www.marklewisohn.net" target="_blank" style="color:lightpink">www.marklewisohn.net <span class="fa fa-external-link"></span> </a>                    
+                    I decided to try to use WordPress to make my own version of that site. My demo site copies all the content and features from the original site, but with different styles and page layouts.
+                    
+                    <h4>Text and Images</h4> 
+                    I directly copied the basic content (text and images).
+                    I used a free online background transparency converter (https://onlinepngtools.com/create-transparent-png) to make the backgrounds of these images transparent so that they could be visually integrated better into the site.
+                    
+                    <h4>Layout</h4> 
+                    I used 'column' blocks to layout multiple columns in a single row. I used the the 'cover' block to put a stationary background image behind a scrolling foreground.
+                    
+                    <h4>Posts</h4> 
+                    In the demo website each piece of streaming media exists as a post. Each post can be viewed as its own page, with a title, date, category, featured image and content.
+                    There are 2 categories of post: audio and video. Each post belongs to one of these categories. WordPress automatically generates the following 'archive pages', which contain lists of posts:
+                        - all posts
+                        - posts of the media category 
+                        - posts of the audio category
+                    Kadence Theme lets me specify the display settings for these archive pages.
+                    
+                    <h4>Embedding streaming media</h4> 
+                    Gutenberg has various blocks that allow media from other websites to be embedded. Gutenberg has specific blocks for the most popular media websites: youtube embed block, soundcloud embed block, vimeo embed block. 
+                    Gutenberg also has a generic 'embed' block. I pasted the URL of the embed media into the block's URL field. 
+                    Gutenberg also has a custom HTML block. Into this I pasted an iframe HTML element. I used it for embedding media from BBC iPlayer and Podbean.
+                    Whenever an embed of the streaming media wasn't possible, I just provided an external link.
+                    
+                    <h4>Twitter Feed</h4> 
+                    To embed Mark Lewisohn's twitter feed into the home page, installed a plugin called 'Custom Twitter Feeds', which adds a block to gutenberg page editor called 'Twitter Feed'. Simply add the URL of the target twitter feed into the block's URL field.
+                    
+                    <h4>Visitor's Form</h4> 
+                    To add a visitor form to the website I installed a plugin called 'Kadence Blocks'. It provides various extra blocks to gutenberg, including a form block, with a field for name, email and message. 
+                    I tested whether this form could send its inputted data as an automated email to the site administrator when a visitor submits it. To allow the autogenerated emails to get through I had to install a plugin called 'WP Mail SMTP'. However, for the online version of this site I disabled this feature, so the form is for display purposes only, and can't be submitted.
+                    
+                    <h4>Migration using WPVivid plugin</h4> 
+                    Initially, instead of installing wordpress to my online hosted account, I installed it locally to my PC, using 'Bitnami WP stack'. I developed the demo website on this local WordPress installation.
+                    Later, I installed a blank copy of WordPress to my  online hosting account and transferred my entire demo website across using a WP plugin called 'WPvivid Backup' by Wpvivid Team. This requires the plugin to be installed on both WordPress installations.                                    
+                </article>
+
+            </div>
+
+        </div>
+
+
+
+
 
 
     </aside>
