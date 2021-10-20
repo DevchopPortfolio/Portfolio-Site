@@ -690,7 +690,7 @@
 
             <h2 class="title">WordPress Demo</h2>
 
-            <p class="summary">A website I made in Wordpress. An alternate version of an existing website. The site I have copied is the official site of Mark Lewisohn, a professional writer, historian and biographer.
+            <p class="summary">A website I made in Wordpress. An alternate version of an existing website. The site I have copied is the official site of Mark Lewisohn, a professional author.
             </p>
         
             <div class="tabpages">
@@ -755,40 +755,38 @@
                 </article>
 
                 <article id="tab4" class="tabpage">                        
-                    While studying Wordpress, I happened to visit the official site of author Mark Lewisohn: <a href="https://www.marklewisohn.net" target="_blank" style="color:lightpink">www.marklewisohn.net <span class="fa fa-external-link"></span> </a>                    
-                    I decided to try to use WordPress to make my own version of that site. My demo site copies all the content and features from the original site, but with different styles and page layouts.
-                    
-                    <h4>Text and Images</h4> 
+                    While studying Wordpress, I happened to visit the official site of author/historian Mark Lewisohn: <a href="https://www.marklewisohn.net" target="_blank" style="color:lightpink">www.marklewisohn.net <span class="fa fa-external-link"></span> </a>
+                    I decided to try to use WordPress to make my own version of that site. My demo site copies all the content and features from the original site, but with different styles and page layouts.                    
+                    <!-- <h4>Text and Images</h4> 
                     I directly copied the basic content (text and images).
-                    I used a free online background transparency converter (https://onlinepngtools.com/create-transparent-png) to make the backgrounds of these images transparent so that they could be visually integrated better into the site.
-                    
-                    <h4>Layout</h4> 
-                    I used 'column' blocks to layout multiple columns in a single row. I used the the 'cover' block to put a stationary background image behind a scrolling foreground.
+                    I used a free online background transparency converter (https://onlinepngtools.com/create-transparent-png) to make the backgrounds of these images transparent so that they could be visually integrated better into the site. -->                    
+                    <h4>Gutenberg</h4> 
+                    I used the default WordPress block editor (Gutenberg) as the page builder. I made use of many of Gutenberg's block types, including various blocks to control layout (group, columns, column, cover, spacer) and add content (image, heading, paragraph, button, quote, pullquote).                    
+                    I used 'column' blocks to layout multiple columns in a single row. On the front page, I used the the 'cover' block to put a stationary background image behind a scrolling foreground.
                     
                     <h4>Posts</h4> 
-                    In the demo website each piece of streaming media exists as a post. Each post can be viewed as its own page, with a title, date, category, featured image and content.
-                    There are 2 categories of post: audio and video. Each post belongs to one of these categories. WordPress automatically generates the following 'archive pages', which contain lists of posts:
+                    The demo site contains embedded audio and video streaming media. Each piece of streaming media exists as a post that can be viewed as a webpage. Each post has a title, date, category, featured image and content.
+                    There are 2 categories of post: audio and video. Each post belongs to one of these categories. WordPress automatically generates the following 'archive pages', which contain lists of specific posts:
                         - all posts
                         - posts of the media category 
                         - posts of the audio category
-                    Kadence Theme lets me specify the display settings for these archive pages.
+                    These archive pages are found under 'Media' in the site's navigation menu. The Kadence Theme contains settings that let me control the appearance/layout for these archive pages.
                     
                     <h4>Embedding streaming media</h4> 
-                    Gutenberg has various blocks that allow media from other websites to be embedded. Gutenberg has specific blocks for the most popular media websites: youtube embed block, soundcloud embed block, vimeo embed block. 
-                    Gutenberg also has a generic 'embed' block. I pasted the URL of the embed media into the block's URL field. 
-                    Gutenberg also has a custom HTML block. Into this I pasted an iframe HTML element. I used it for embedding media from BBC iPlayer and Podbean.
-                    Whenever an embed of the streaming media wasn't possible, I just provided an external link.
+                    Gutenberg has various block types that allow media from other websites to be embedded. It has specific blocks for the most popular media websites, including a Youtube embed block, SoundCloud embed block, Vimeo embed block. For other streaming websites, Gutenberg has a generic 'embed' block. To use this I pasted the URL of the embed media into the block's URL field. 
+                    Gutenberg also has a custom HTML block. Into this I pasted an iframe HTML element. This was required for embedding media from BBC iPlayer and Podbean. Wherever it was not possible to make an embed of the streaming media, I just provided an external link.
                     
                     <h4>Twitter Feed</h4> 
                     To embed Mark Lewisohn's twitter feed into the home page, installed a plugin called 'Custom Twitter Feeds', which adds a block to gutenberg page editor called 'Twitter Feed'. Simply add the URL of the target twitter feed into the block's URL field.
                     
                     <h4>Visitor's Form</h4> 
-                    To add a visitor form to the website I installed a plugin called 'Kadence Blocks'. It provides various extra blocks to gutenberg, including a form block, with a field for name, email and message. 
-                    I tested whether this form could send its inputted data as an automated email to the site administrator when a visitor submits it. To allow the autogenerated emails to get through I had to install a plugin called 'WP Mail SMTP'. However, for the online version of this site I disabled this feature, so the form is for display purposes only, and can't be submitted.
+                    To add a form that visitors can submit I installed a plugin called 'Kadence Blocks'. It provides various extra blocks to gutenberg, including a form block, with a field for name, email and message. 
+                    I tested whether this form could send its inputted data as an automated email to the site administrator when a visitor submits it. To allow the autogenerated emails to reach the recipient without being blocked, I had to install a plugin called 'WP Mail SMTP'.
+                    However, since this is a demo site, I disabled this feature, so the form is for display purposes only, and can't be submitted.
                     
                     <h4>Migration using WPVivid plugin</h4> 
-                    Initially, instead of installing wordpress to my online hosted account, I installed it locally to my PC, using 'Bitnami WP stack'. I developed the demo website on this local WordPress installation.
-                    Later, I installed a blank copy of WordPress to my  online hosting account and transferred my entire demo website across using a WP plugin called 'WPvivid Backup' by Wpvivid Team. This requires the plugin to be installed on both WordPress installations.                                    
+                    Initially, instead of installing WordPress to my online hosted account, I installed it locally to my PC, using 'Bitnami WP stack'. I developed the demo website on this local WordPress installation.
+                    Later, I installed a blank copy of WordPress to my online hosting account and transferred my entire demo website across using a WordPress plugin called 'WPvivid Backup' by Wpvivid Team. This requires the plugin to be installed on both WordPress installations.
                 </article>
 
             </div>
