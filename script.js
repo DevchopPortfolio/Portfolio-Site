@@ -13,17 +13,11 @@ let githubUrlHolder = document.querySelector('#githuburlholder');
 // ADD EVENTLISTENER TO EACH BUTTON
 
 document.querySelectorAll('#menubar li').forEach( thisButton => {
-
+    
     thisButton.addEventListener('click', (pingReport) => {
-
-        //scroll to bottom so that <main> fills the screen
-        // if (window.innerHeight > 600) {
-        //     window.scrollTo(0, document.body.scrollHeight);                      //browser scrolls down
-        // }       
-        
         buttonActivate(pingReport.target);
-
     });
+
 });
 
 
@@ -31,48 +25,41 @@ document.querySelectorAll('#menubar li').forEach( thisButton => {
 
 function buttonActivate (thisButton) {        
 
-        // if they click the text on the button instead of the button, target the button
-        // if(thisbutton.nodeName == 'SPAN') {            
-        //     thisbutton = thisbutton.parentNode
-        // }
+    document.querySelectorAll('#menubar li').forEach(otherTab => {
+        otherTab.classList.remove('active');                             //remove 'active' class from all tabs
+    })
 
-        // document.querySelector('#lowerframe').classList.remove('invisibility');
-        // document.querySelector('#placeholder').classList.add('invisibility')      
+    thisButton.classList.add('active');                                  //add 'active' class to this button
 
-        document.querySelectorAll('#menubar li').forEach(otherTab => {
-            otherTab.classList.remove('active');                             //remove 'active' class from all tabs
-        })
-
-        thisButton.classList.add('active');                                  //add 'active' class to this button
-
-        // link to the corresponding post in the content library        
-        let thisPost = document.querySelector('.post' + thisButton.getAttribute('data-target'));
+    // link to the corresponding post in the content library        
+    let thisPost = document.querySelector('.post' + thisButton.getAttribute('data-target'));
             
-        // console.log('.post' + thisbutton.getAttribute('data-target'))
-        // console.log(thispost)        
-        
-        //create links to all the content in thispost
-        let titleToMove = thisPost.querySelector('.title');
-        let summaryToMove = thisPost.querySelector('.summary');
-        let tabPagesToMove = thisPost.querySelector('.tabpages');
-        let projectTitle = titleToMove.innerText;
-        let linkUrl = thisPost.getAttribute('data-linkurl');
-        let githubUrl = thisPost.getAttribute('data-githuburl');
+    //create links to all the content in thispost
+    let titleToMove = thisPost.querySelector('.title');
+    let summaryToMove = thisPost.querySelector('.summary');
+    let tabPagesToMove = thisPost.querySelector('.tabpages');
+    let projectTitle = titleToMove.innerText;
+    let linkUrl = thisPost.getAttribute('data-linkurl');
+    let githubUrl = thisPost.getAttribute('data-githuburl');
 
-        //populate the HTML template with thispost        
-        titleHolder.innerHTML = '';
-        titleHolder.appendChild(titleToMove.cloneNode(true));
-        summaryHolder.innerHTML = '';
-        summaryHolder.appendChild(summaryToMove.cloneNode(true));
-        tabpageHolder.innerHTML = '';
-        tabpageHolder.appendChild(tabPagesToMove.cloneNode(true));
-        projectTitleHolder.innerText = projectTitle;
-        projectTitleHolder2.innerText = projectTitle;
-        linkUrlHolder.setAttribute('href', linkUrl);
-        githubUrlHolder.setAttribute('href', githubUrl);
+    //populate the HTML template with thispost        
+    titleHolder.innerHTML = '';
+    titleHolder.appendChild(titleToMove.cloneNode(true));
+    summaryHolder.innerHTML = '';
+    summaryHolder.appendChild(summaryToMove.cloneNode(true));
+    tabpageHolder.innerHTML = '';
+    tabpageHolder.appendChild(tabPagesToMove.cloneNode(true));
+    projectTitleHolder.innerText = projectTitle;
+    projectTitleHolder2.innerText = projectTitle;
+    linkUrlHolder.setAttribute('href', linkUrl);
+    githubUrlHolder.setAttribute('href', githubUrl);
 
-        //activate tab1
-        tabActivate(document.querySelector('[data-target="#tab1"]'));
+    //activate tab1
+    tabActivate(document.querySelector('[data-target="#tab1"]'));
+
+    // On the WordPress project, make github link invisible, since the wordpress project has nothing on github
+    githubUrlHolder.classList.remove('invisibility')    
+    if (thisButton.getAttribute('data-target') == '#wordpress') {githubUrlHolder.classList.add('invisibility')}    
 };
 
 

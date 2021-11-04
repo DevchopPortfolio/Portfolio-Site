@@ -1,4 +1,5 @@
 
+/* declare CSS variables */
 :root {    
     --colprimary: darkslateblue;
     --coloffblack: #111;
@@ -16,7 +17,8 @@ body {
 }
 
 
-#contentlibrary
+#contentlibrary,
+.invisibility
 {
     display: none;
 }
@@ -37,7 +39,6 @@ h4 {
     margin: 0;
     padding: 0;
 }
-
 
 
 
@@ -103,15 +104,15 @@ header h3 {
     color: white;    
 }
 
-/* helps with clicking on the buttons */
 #menubar li .menuText,
 #menubar li .fa
-{
-    pointer-events: none
+{    
+    pointer-events: none  /* necessary for clicking on the menubar buttons */
 }
 
-/* responsivity of menubar */
+/* media query for responsivity of menubar */
 @media (max-width: 850px) {
+
     #menubar {    
         justify-content:space-around;
     }
@@ -119,7 +120,7 @@ header h3 {
     #menubar li {
         /* width: auto; */
         min-width: 2.1rem;
-        /* font-size: 0.8em;         */
+        /* font-size: 0.8em; */
         padding: 0.7rem 0.4rem;   
         margin: 0 0.5rem;
         flex-grow: 1;
@@ -128,17 +129,8 @@ header h3 {
     #menubar .menuText {
         display: none;
     }
-}
 
-/* @media (max-width: 690px) {   
-    header #menubar li {
-        width: auto;
-        min-width: 1rem;
-        font-size: 0.8em;        
-        padding: 0.4rem 0.4rem;   
-        margin: 0 0.1rem;
-    }
-} */
+}
 
 #menubar li:not(.active):hover {        
     /* opacity: 0.5; */
@@ -150,14 +142,13 @@ header h3 {
 
 #menubar li.active {
     /* background:#116; */    
-    transform: translateY(0.8rem);    
+    transform: translateY(1rem);    
     font-weight: bold;        
     box-shadow: 0 0 0;   
     background: white;
     /* background: var(--coloffblack); */
     color: black;      
 }
-
 
 
                 /* MAIN */
