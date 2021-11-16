@@ -93,5 +93,5 @@ function tabActivate (thisTab) {
 };
 
 
-// make first button active upon first load
+// make first button active on first load
 buttonActivate(document.querySelector('#menubar :first-child'));
