@@ -630,11 +630,11 @@
                     <h4>Buttons</h4>                    
                     There are multiple 'posts'. Each post contains the data (title, links, summary, tabpages) for a different project.
                     
-                    The user clicks a button in the left menu to select which post to view in the template on the right. Javascript then copies that post's data from the content library to the display template, replacing whatever content the template currently contained.
+                    The user clicks a button in the main menu to select which post to view in the template at the bottom. JavaScript then copies that post's data from the content library to the display template, replacing whatever content the template currently contained.
                     
                     Only the content of the currently active post is applied to the template at one time. This process is an example of the separation of template from content.
                     
-                    The template presents posts in a standardised way, controlling their presentation/layout. The template is composed of various HTML elements and is located in the 'div #rightframe' element.
+                    The template presents posts in a standardised way, controlling their presentation/layout. The template is composed of various HTML elements and is located in the 'div #lowerframe' element.
                     
                     Posts are located in HTML document, in the 'content library' which is the 'div #contentlibrary' element. The content library appears in the HTML but it is omitted from the page, due to the following CSS rule set:
                         #contentlibrary {
