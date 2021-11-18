@@ -112,7 +112,7 @@
             <h2 class="title">Snapperoonies</h2>
 
             <!-- summary of post -->
-            <p class="summary">A brochure site I made in HTML and CSS for a fictitious photography company.
+            <p class="summary">A brochure site I made in HTML, CSS and PHP for a fictitious photography company.
                 Responsive for different screen sizes.
             </p>
         
@@ -126,21 +126,21 @@
                 
                 <!-- tab2 - concepts -->
                 <article id="tab2" class="tabpage">
-                    HTML and CSS
-                    CSS media queries used for responsivity
-                    CSS flexbox used for the header
-                    CSS grid used in various places for the photographs
+                    HTML, CSS, PHP
+                    CSS media queries used for responsivity                    
                     CSS variables (custom properties) for storing recurring values
                     Responsivity with CSS media queries
-                    CSS layouts: grid, flexbox
-                    
-                    Stock photographs from imgur
-                    Icons from google icons
-                    Icons from Font Awesome                    
+                    CSS layouts: grid, flexbox                        
+                    PHP used to assemble each page from multiple HTML files
+                    Stock photographs from Imgur
+                    Icons from Google Icons and Font Awesome
                 </article>
                 
                 <!-- tab3 - tools list -->
                 <article id="tab3" class="tabpage">
+                    <h4>PHP tools</h4>
+                        php elememt, include statement, echo statement, variables
+
                     <h4>HTML tools</h4>
                     <b>Semantic elements</b>
                         header, footer, div, section, aside, article, nav
@@ -173,8 +173,13 @@
 
                 <!-- tab4 - in depth -->
                 <article id="tab4" class="tabpage">
-                    I made this project with HTML and CSS, without javascript.
+                    I made this project with HTML, CSS and PHP, without JavaScript.
 
+                    <h4>PHP</h4>  
+                    The Header section and Footer section are the same for every page so, to avoid repitition, are both located in separate files (header.php, footer.html) on the server. On the server the HTML from these files is imported to the main pages using PHP, specifically the 'include' statement.
+
+                    The only page-specific change in the Header section is which nav bar button is currently highlighted. This is achieved by using PHP variables that control the id (value of HTML id attribute) of each button. These variables are applied to the HTML using the PHP 'echo' statement.
+                    
                     <h4>Responsivity</h4>                    
                     To check the site's responsivity, view it at various window widths. Most sections of the site use media queries to achieve rearranged layouts at different widths.
                     
